@@ -1,0 +1,152 @@
+$pw: 8.5in;
+$ph: 11in;
+$pvm: 0.5in;
+$phm: $pvm;
+$about-w: (($pw - 3*$phm)/3);
+$expr-w: $pw - 3*$phm - $about-w;
+$font-size: 0.9em;
+$font-color: #444444;
+$base-color: #0395DA;
+$highlight-color: #48A2A8;
+$hr-color: #CCCCCC;
+
+a {
+	text-decoration: none;
+	color: $font-color;
+}
+
+ul.inline {
+	list-style: none;
+	padding: 0px 0px 0px 2em;
+	& li {
+		display: inline;
+		&:after { content: ","; }
+		&:last-child:after { content: ""; }
+	}
+}
+ul.reduce-padding {
+	margin: 0px;
+	padding: 0px 0px 0px 2em;
+}
+
+p {
+	margin-bottom: 0px;
+}
+
+strong { color: $highlight-color; }
+
+@page {
+	size: $pw $ph;
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	background: #EEEEEE;
+}
+
+body {
+	color: $font-color;
+	max-width: $pw - 2*$phm;
+	height: $ph - 2*$pvm;
+	padding: $pvm $phm;
+	background: #FFFFFF;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	position: static;
+	font-family: Lato;
+	font-weight: 300;
+	position: relative;
+}
+
+.header {
+	position: relative;
+	top: -0.8em;
+	& > * {
+		margin: 0px;
+	}
+	h1 {
+		font-size: 4em;
+		font-family: Playball;
+	}
+	.contact {
+		top: 0px;
+		&, & > * {
+			position: absolute;
+			right: 0px;
+			height: 100%;
+			width: 100%;
+		}
+		& > * {
+			top: 0.25em;
+			bottom: 0.75em; //More on bottom as my name has only 1 descender
+			text-align: right;
+			margin: auto;
+			height: 1.2em;
+			line-height: 1.2em;
+			&:first-child { bottom: auto; }
+			&:last-child { top: auto; }
+		}
+	}
+}
+
+h2 {
+	position: relative;
+	overflow: hidden;
+	color: $base-color;
+	&:after {
+		content: " ";
+		position: absolute;
+		height: 2px;
+		top: 0px;
+		bottom: 0px;
+		width: 100%;
+		display: inline-block;
+		background: $hr-color;
+		margin: auto 1em;
+	}
+}
+
+.about, .experience {
+	font-size: $font-size;
+	position: absolute;
+	top: 10em;
+	&.about {
+		left: $phm;
+		width: $about-w;
+	}
+	&.experience {
+		right: $phm;
+		width: $expr-w;
+	}
+	& > *:first-child h2 { margin-top: 0px; }
+	a {
+		text-decoration: underline;
+		color: darken(saturate($highlight-color, 100%), 15%);
+	}
+}
+
+.about {
+	h2 {
+		margin: 2em 0px 0.5em 0px;
+	}
+}
+
+.experience {
+	.dates {
+		font-style: italic;
+		margin: 0.4em 0px 0.5em 0px;
+		font-size: 0.8em;
+		&:before { content: "("; }
+		&:after { content: ")"; }
+	}
+	h2 {
+		margin-bottom: 0px;
+	}
+	ul {
+		margin-top: 0px;
+	}
+}

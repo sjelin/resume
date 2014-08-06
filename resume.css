@@ -1,0 +1,120 @@
+a {
+  text-decoration: none;
+  color: #444444; }
+
+ul.inline {
+  list-style: none;
+  padding: 0px 0px 0px 2em; }
+  ul.inline li {
+    display: inline; }
+    ul.inline li:after {
+      content: ","; }
+    ul.inline li:last-child:after {
+      content: ""; }
+
+ul.reduce-padding {
+  margin: 0px;
+  padding: 0px 0px 0px 2em; }
+
+p {
+  margin-bottom: 0px; }
+
+strong {
+  color: #48a2a8; }
+
+@page {
+  size: 8.5in 11in;
+  margin: 0px;
+  padding: 0px; }
+html {
+  background: #EEEEEE; }
+
+body {
+  color: #444444;
+  max-width: 7.5in;
+  height: 10in;
+  padding: 0.5in 0.5in;
+  background: #FFFFFF;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  position: static;
+  font-family: Lato;
+  font-weight: 300;
+  position: relative; }
+
+.header {
+  position: relative;
+  top: -0.8em; }
+  .header > * {
+    margin: 0px; }
+  .header h1 {
+    font-size: 4em;
+    font-family: Playball; }
+  .header .contact {
+    top: 0px; }
+    .header .contact, .header .contact > * {
+      position: absolute;
+      right: 0px;
+      height: 100%;
+      width: 100%; }
+    .header .contact > * {
+      top: 0.25em;
+      bottom: 0.75em;
+      text-align: right;
+      margin: auto;
+      height: 1.2em;
+      line-height: 1.2em; }
+      .header .contact > *:first-child {
+        bottom: auto; }
+      .header .contact > *:last-child {
+        top: auto; }
+
+h2 {
+  position: relative;
+  overflow: hidden;
+  color: #0395da; }
+  h2:after {
+    content: " ";
+    position: absolute;
+    height: 2px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    display: inline-block;
+    background: #cccccc;
+    margin: auto 1em; }
+
+.about, .experience {
+  font-size: 0.9em;
+  position: absolute;
+  top: 10em; }
+  .about.about, .experience.about {
+    left: 0.5in;
+    width: 2.33333in; }
+  .about.experience, .experience.experience {
+    right: 0.5in;
+    width: 4.66667in; }
+  .about > *:first-child h2, .experience > *:first-child h2 {
+    margin-top: 0px; }
+  .about a, .experience a {
+    text-decoration: underline;
+    color: #0099a3; }
+
+.about h2 {
+  margin: 2em 0px 0.5em 0px; }
+
+.experience .dates {
+  font-style: italic;
+  margin: 0.4em 0px 0.5em 0px;
+  font-size: 0.8em; }
+  .experience .dates:before {
+    content: "("; }
+  .experience .dates:after {
+    content: ")"; }
+.experience h2 {
+  margin-bottom: 0px; }
+.experience ul {
+  margin-top: 0px; }
