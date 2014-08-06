@@ -42,7 +42,7 @@ html {
 body {
 	color: $font-color;
 	max-width: $pw - 2*$phm;
-	height: $ph - 2*$pvm;
+	min-height: $ph - 2*$pvm;
 	padding: $pvm $phm;
 	background: #FFFFFF;
 	top: 0px;
@@ -106,7 +106,7 @@ h2 {
 
 .about, .experience {
 	font-size: $font-size;
-	position: absolute;
+	display: inline-block;
 	top: 10em;
 	&.about {
 		left: $phm;
@@ -115,6 +115,7 @@ h2 {
 	&.experience {
 		right: $phm;
 		width: $expr-w;
+		float: right;
 	}
 	& > *:first-child h2 { margin-top: 0px; }
 	a {

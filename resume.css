@@ -28,7 +28,7 @@ html {
 body {
   color: #444444;
   max-width: 7.5in;
-  height: 10in;
+  min-height: 10in;
   padding: 0.5in 0.5in;
   background: #FFFFFF;
   top: 0px;
@@ -85,14 +85,15 @@ h2 {
 
 .about, .experience {
   font-size: 0.9em;
-  position: absolute;
+  display: inline-block;
   top: 10em; }
   .about.about, .experience.about {
     left: 0.5in;
     width: 2.33333in; }
   .about.experience, .experience.experience {
     right: 0.5in;
-    width: 4.66667in; }
+    width: 4.66667in;
+    float: right; }
   .about > *:first-child h2, .experience > *:first-child h2 {
     margin-top: 0px; }
   .about a, .experience a {
