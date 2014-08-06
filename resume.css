@@ -22,10 +22,6 @@ p {
 strong {
   color: #48a2a8; }
 
-@page {
-  size: 8.5in 11in;
-  margin: 0px;
-  padding: 0px; }
 html {
   background: #EEEEEE; }
 
@@ -118,3 +114,8 @@ h2 {
   margin-bottom: 0px; }
 .experience ul {
   margin-top: 0px; }
+
+@page {
+  size: 9.08in 11.75in;
+  margin: 0px;
+  padding: 0px; }

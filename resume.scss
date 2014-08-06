@@ -35,12 +35,6 @@ p {
 
 strong { color: $highlight-color; }
 
-@page {
-	size: $pw $ph;
-	margin: 0px;
-	padding: 0px;
-}
-
 html {
 	background: #EEEEEE;
 }
@@ -149,4 +143,10 @@ h2 {
 	ul {
 		margin-top: 0px;
 	}
+}
+
+@page {
+	size: 9.08in 11.75in; // Yeah, I have no idea why these are the correct numbers either
+	margin: 0px;
+	padding: 0px;
 }
