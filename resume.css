@@ -50,7 +50,7 @@ body {
 .header {
   position: relative;
   top: -0.8em;
-  margin-bottom: 2em; }
+  margin-bottom: 3em; }
   .header > * {
     margin: 0em; }
   .header h1 {
@@ -116,8 +116,18 @@ h2 {
   margin-top: 0em; }
 
 @media (min-width: 450pt) and (max-width: 611pt) {
+  .header {
+    width: 32em;
+    margin-right: auto;
+    margin-left: auto; }
+    .header h1 {
+      width: 200%;
+      margin-left: -50%;
+      text-align: center; }
+
   .header .contact {
     position: absolute;
+    padding-left: 0.2em;
     width: 200%; }
     .header .contact li {
       position: static; }
