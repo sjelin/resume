@@ -65,13 +65,17 @@ body {
       left: 0em;
       right: 0em;
       text-align: center;
-      display: inline; }
+      display: inline;
+      max-width: 12em;
+      margin: auto; }
       .header .contact li:first-child {
         right: auto;
-        text-align: left; }
+        text-align: left;
+        z-index: 1; }
       .header .contact li:last-child {
         left: auto;
-        text-align: right; }
+        text-align: right;
+        z-index: 1; }
 
 h2 {
   position: relative;

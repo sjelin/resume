@@ -80,13 +80,17 @@ body {
 			right: 0em;
 			text-align: center;
 			display: inline;
+			max-width: 12em;
+			margin: auto;
 			&:first-child {
 				right: auto;
 				text-align: left;
+				z-index: 1;
 			}
 			&:last-child {
 				left: auto;
 				text-align: right;
+				z-index: 1;
 			}
 		}
 	}
