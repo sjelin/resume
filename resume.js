@@ -4,6 +4,8 @@ window.onload = function() {
 	// people who disable javascript can deal
 	$("a").each(function() {
 		var $this = $(this);
+		if($this.attr("href"))
+			return;
 		var text = $this.text();
 		if(/^\s*\(?[0-9]{3}\)?\s*-?\s*[0-9]{3}\s*-?\s*[0-9]+\s*$/.test(text))
 			$this.attr("href", "tel:" + text.split("").filter(function(c) {
@@ -12,8 +14,10 @@ window.onload = function() {
 			$this.attr("href", "mailto:"+text);
 		else if(text.substr(0, 4) == "http")
 			$this.attr("href", text);
-		else
+		else if(/^\w+\.\w+$/.test(text))
 			$this.attr("href", "http://"+text);
+		else
+			$this.attr("href", "#"+text.toLowerCase());
 	});
 
 	$name = $(".header h1");

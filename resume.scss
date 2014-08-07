@@ -125,6 +125,8 @@ h2 {
 		margin-top: 1.5em;
 	}
 	& > *:first-child h2 { margin-top: 0em; }
+}
+.experience {
 	a {
 		text-decoration: underline;
 		color: darken(saturate($highlight-color, 100%), 15%);

@@ -109,9 +109,10 @@ h2 {
     margin-top: 1.5em; }
   .about > *:first-child h2, .experience > *:first-child h2 {
     margin-top: 0em; }
-  .about a, .experience a {
-    text-decoration: underline;
-    color: #0099a3; }
+
+.experience a {
+  text-decoration: underline;
+  color: #0099a3; }
 
 .about h2 {
   margin-bottom: 0.5em; }
