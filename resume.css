@@ -154,9 +154,9 @@ h2 {
   .header {
     margin-bottom: 0em; }
 
-  .header .contact {
+  .header ul.contact {
     top: 0em; }
-    .header .contact, .header .contact > li {
+    .header ul.contact {
       position: absolute;
       right: 0em;
       height: 100%;
@@ -164,18 +164,21 @@ h2 {
       list-style: none;
       margin: 0em;
       padding: 0em; }
-    .header .contact > li, .header .contact > li:first-child {
+    .header ul.contact > li, .header ul.contact > li:first-child {
+      right: 0em;
+      left: auto;
+      width: 100%;
       top: 0.25em;
       bottom: 0.75em;
       text-align: right;
       margin: auto;
       height: 1.2em;
       line-height: 1.2em; }
-      .header .contact > li:first-child, .header .contact > li:first-child:first-child {
+      .header ul.contact > li:first-child, .header ul.contact > li:first-child:first-child {
         bottom: auto; }
-      .header .contact > li:last-child, .header .contact > li:first-child:last-child {
+      .header ul.contact > li:last-child, .header ul.contact > li:first-child:last-child {
         top: auto; }
-      .header .contact > li:before, .header .contact > li:after, .header .contact > li:first-child:before, .header .contact > li:first-child:after {
+      .header ul.contact > li:before, .header ul.contact > li:after, .header ul.contact > li:first-child:before, .header ul.contact > li:first-child:after {
         display: none; }
 
   .about {

@@ -182,9 +182,9 @@ h2 {
 
 @media print, (min-width: 8.5in) {
 	.header { margin-bottom: 0em; }
-	.header .contact {
+	.header ul.contact {
 		top: 0em;
-		&, & > li {
+		& {
 			position: absolute;
 			right: 0em;
 			height: 100%;
@@ -194,6 +194,9 @@ h2 {
 			padding: 0em;
 		}
 		& > li, & > li:first-child {
+			right: 0em;
+			left: auto;
+			width: 100%;
 			top: 0.25em;
 			bottom: 0.75em; //More on bottom as my name has only 1 descender
 			text-align: right;
