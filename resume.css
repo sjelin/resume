@@ -125,7 +125,7 @@ h2 {
 .experience ul {
   margin-top: 0em; }
 
-@media (min-width: 450pt) and (max-width: 611pt) {
+@media screen and (min-width: 450pt) and (max-width: 611pt) {
   .header {
     width: 32em;
     margin-right: auto;
