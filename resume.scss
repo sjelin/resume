@@ -17,7 +17,7 @@ a {
 
 ul.inline {
 	list-style: none;
-	padding: 0px 0px 0px 2em;
+	padding: 0em 0em 0em 2em;
 	& li {
 		display: inline;
 		&:after { content: ","; }
@@ -25,12 +25,12 @@ ul.inline {
 	}
 }
 ul.reduce-padding {
-	margin: 0px;
-	padding: 0px 0px 0px 2em;
+	margin: 0em;
+	padding: 0em 0em 0em 2em;
 }
 
 p {
-	margin-bottom: 0px;
+	margin-bottom: 0em;
 }
 
 strong { color: $highlight-color; }
@@ -45,10 +45,10 @@ body {
 	min-height: $ph - 2*$pvm;
 	padding: $pvm $phm;
 	background: #FFFFFF;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
+	top: 0em;
+	bottom: 0em;
+	left: 0em;
+	right: 0em;
 	margin: auto;
 	position: static;
 	font-family: Lato;
@@ -59,30 +59,32 @@ body {
 .header {
 	position: relative;
 	top: -0.8em;
+	margin-bottom: 1em;
 	& > * {
-		margin: 0px;
+		margin: 0em;
 	}
 	h1 {
 		font-size: 4em;
 		font-family: Playball;
+		width: 200%;
 	}
 	.contact {
-		top: 0px;
-		&, & > * {
+		margin: 0em;
+		padding: 0em;
+		li {
 			position: absolute;
-			right: 0px;
-			height: 100%;
-			width: 100%;
-		}
-		& > * {
-			top: 0.25em;
-			bottom: 0.75em; //More on bottom as my name has only 1 descender
-			text-align: right;
-			margin: auto;
-			height: 1.2em;
-			line-height: 1.2em;
-			&:first-child { bottom: auto; }
-			&:last-child { top: auto; }
+			left: 0em;
+			right: 0em;
+			text-align: center;
+			display: inline;
+			&:first-child {
+				right: auto;
+				text-align: left;
+			}
+			&:last-child {
+				left: auto;
+				text-align: right;
+			}
 		}
 	}
 }
@@ -94,9 +96,9 @@ h2 {
 	&:after {
 		content: " ";
 		position: absolute;
-		height: 2px;
-		top: 0px;
-		bottom: 0px;
+		height: 2pt;
+		top: 0em;
+		bottom: 0em;
 		width: 100%;
 		display: inline-block;
 		background: $hr-color;
@@ -108,16 +110,10 @@ h2 {
 	font-size: $font-size;
 	display: inline-block;
 	top: 10em;
-	&.about {
-		left: $phm;
-		width: $about-w;
+	& h2 {
+		margin-top: 1.5em;
 	}
-	&.experience {
-		right: $phm;
-		width: $expr-w;
-		float: right;
-	}
-	& > *:first-child h2 { margin-top: 0px; }
+	& > *:first-child h2 { margin-top: 0em; }
 	a {
 		text-decoration: underline;
 		color: darken(saturate($highlight-color, 100%), 15%);
@@ -126,28 +122,90 @@ h2 {
 
 .about {
 	h2 {
-		margin: 2em 0px 0.5em 0px;
+		margin-bottom: 0.5em;
 	}
 }
 
 .experience {
 	.dates {
 		font-style: italic;
-		margin: 0.4em 0px 0.5em 0px;
+		margin: 0.4em 0em 0.5em 0em;
 		font-size: 0.8em;
 		&:before { content: "("; }
 		&:after { content: ")"; }
 	}
 	h2 {
-		margin-bottom: 0px;
+		margin-bottom: 0em;
 	}
 	ul {
-		margin-top: 0px;
+		margin-top: 0em;
+	}
+}
+
+@media (min-width: 450pt) and (max-width: 611pt) {
+	.header .contact {
+		position: absolute; // So it doesn't take up space
+		width: 200%; // Prevent overflow
+		li {
+			position: static;
+			&:after { margin-left: 0.2em; }
+			&:before { margin-right: 0.2em; }
+			&:first-child:after, &:last-child:before {
+				content: "\00B7";
+				width: 4.5em;
+				text-align: center;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+@media print, (min-width: 8.5in) {
+	.header { margin-bottom: 0em; }
+	.header .contact {
+		top: 0em;
+		&, & > li {
+			position: absolute;
+			right: 0em;
+			height: 100%;
+			width: 100%;
+			list-style: none;
+			margin: 0em;
+			padding: 0em;
+		}
+		& > li, & > li:first-child {
+			top: 0.25em;
+			bottom: 0.75em; //More on bottom as my name has only 1 descender
+			text-align: right;
+			margin: auto;
+			height: 1.2em;
+			line-height: 1.2em;
+			&:first-child { bottom: auto; }
+			&:last-child { top: auto; }
+			&:before, &:after { display: none; }
+		}
+	}
+	.about {
+		left: $phm;
+		width: $about-w;
+		h2 { margin-top: 2em; }
+	}
+	.experience {
+		right: $phm;
+		width: $expr-w;
+		float: right;
+		h2 { margin-top: 1em; }
+	}
+}
+
+@for $i from 449 to 180 {
+	@media (max-width: #{$i}pt) {
+		.header { font-size: #{1 - (0.4 / (450 - 300)) * (450 - $i)}em }
 	}
 }
 
 @page {
 	size: 9.08in 11.75in; // Yeah, I have no idea why these are the correct numbers either
-	margin: 0px;
-	padding: 0px;
+	margin: 0em;
+	padding: 0em;
 }
