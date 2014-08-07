@@ -100,7 +100,7 @@ h2 {
 
 @media print {
   h2:after {
-    height: 2pt; } }
+    height: 1.5pt; } }
 .about, .experience {
   font-size: 0.9em;
   display: inline-block;
