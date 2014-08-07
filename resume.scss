@@ -136,8 +136,6 @@ h2 {
 		font-style: italic;
 		margin: 0.4em 0em 0.5em 0em;
 		font-size: 0.8em;
-		&:before { content: "("; }
-		&:after { content: ")"; }
 	}
 	h2 {
 		margin-bottom: 0em;
