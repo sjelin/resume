@@ -10,8 +10,10 @@ $base-color: #0395DA;
 $highlight-color: #48A2A8;
 $hr-color: #CCCCCC;
 
+.unimportant { display: none; }
 .notes { display: none; }
-@media (min-width: 300pt) { .notes { display: inline; } }
+@media (min-width: 200pt) { .notes { display: inline; } }
+@media (min-width: 300pt) { .unimportant { display: inline; } }
 
 a {
 	text-decoration: none;
