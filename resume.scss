@@ -10,6 +10,9 @@ $base-color: #0395DA;
 $highlight-color: #48A2A8;
 $hr-color: #CCCCCC;
 
+.notes { display: none; }
+@media (min-width: 300pt) { .notes { display: inline; } }
+
 a {
 	text-decoration: none;
 	color: $font-color;
@@ -59,7 +62,7 @@ body {
 .header {
 	position: relative;
 	top: -0.8em;
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 	& > * {
 		margin: 0em;
 	}
@@ -96,7 +99,7 @@ h2 {
 	&:after {
 		content: " ";
 		position: absolute;
-		height: 2pt;
+		height: 2px;
 		top: 0em;
 		bottom: 0em;
 		width: 100%;
@@ -105,6 +108,8 @@ h2 {
 		margin: auto 1em;
 	}
 }
+@media print { h2:after { height: 2pt; } }
+
 
 .about, .experience {
 	font-size: $font-size;
@@ -200,7 +205,11 @@ h2 {
 
 @for $i from 449 to 180 {
 	@media (max-width: #{$i}pt) {
-		.header { font-size: #{1 - (0.4 / (450 - 300)) * (450 - $i)}em }
+		$index: (450 - $i) / (450 - 300);
+		body { padding: (1 - 0.4 * $index) * $pvm (1 - 0.4 * $index) * $phm; }
+		.header { font-size: #{1 - 0.33 * $index}em }
+		.header .contact { font-size: #{1 + 0.2 * $index}em }
+		h2 { font-size: #{1.5 - 0.3 * $index}em }
 	}
 }
 
