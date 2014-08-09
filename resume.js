@@ -1,7 +1,7 @@
 var $name;
 window.onload = function() {
-	// The following could totally be done in the HTML, but I'm lazy and
-	// people who disable javascript can deal
+	// The following could totally be done in the HTML, but this makes my
+	// HTML cleaner and people who disable javascript can deal
 	$("a").each(function() {
 		var $this = $(this);
 		if($this.attr("href"))
@@ -14,7 +14,7 @@ window.onload = function() {
 			$this.attr("href", "mailto:"+text);
 		else if(text.substr(0, 4) == "http")
 			$this.attr("href", text);
-		else if(/^\w+\.\w+$/.test(text))
+		else if(/^\w+\.\w+(?:\/.*)?$/.test(text))
 			$this.attr("href", "http://"+text);
 		else
 			$this.attr("href", "#"+text.toLowerCase());
@@ -29,11 +29,13 @@ window.onload = function() {
 //Stop my name from overflowing
 window.onresize = function() {
 	var NAME_RATIO = 5;//experimentally derived
+	var PRECISION = 3;// # of decimal points
+	var ITERATIONS = PRECISION * Math.log(10) / Math.log(2);
 	var name = $name[0];//de-JQ for speed in inner loop
 	name.style.fontSize = "";
 	if(name.scrollWidth <= NAME_RATIO * name.scrollHeight) {
-		var l = 3, h = 4;
-		for(var i = 0; i < 10; i++) {
+		var l = 3, h = 4;//4em is the goal, but as low as 3em might be needed
+		for(var i = 0; i < ITERATIONS; i++) {
 			var m = (l+h)/2;
 			name.style.fontSize = m+"em";
 			if(name.scrollWidth > NAME_RATIO * name.scrollHeight)
@@ -41,6 +43,7 @@ window.onresize = function() {
 			else
 				h = m;
 		}
-		name.style.fontSize = l+"em";
+		var tmp = Math.pow(10, PRECISION+1);
+		name.style.fontSize = (Math.floor(l*tmp)/tmp)+"em";
 	}
 }
