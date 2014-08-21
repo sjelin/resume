@@ -111,8 +111,9 @@ h2 {
   top: 10em; }
   #about h2, #experience h2 {
     margin-top: 1.5em; }
-  #about > *:first-child h2, #experience > *:first-child h2 {
-    margin-top: 0em; }
+
+#about > *:first-child h2 {
+  margin-top: 0em; }
 
 #experience a {
   text-decoration: underline;
@@ -231,7 +232,9 @@ h2 {
     width: 4.66667in;
     float: right; }
     #experience h2 {
-      margin-top: 1em; } }
+      margin-top: 1em; }
+    #experience > *:first-child h2 {
+      margin-top: 0em; } }
 @media (max-width: 449pt) {
   body {
     padding: 0.49867in 0.49867in; }
