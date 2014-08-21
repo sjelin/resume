@@ -45,8 +45,10 @@ p {
 
 strong { color: $highlight-color; }
 
-html {
-	background: #EEEEEE;
+@media screen {
+	html {
+		background: #EEEEEE;
+	}
 }
 
 body {
@@ -270,7 +272,7 @@ h2 {
 }
 
 @page {
-	size: 9.08in 11.75in; // Yeah, I have no idea why these are the correct numbers either
+	size: 9.08in 11.93in; // Yeah, I have no idea why these are the correct numbers either
 	margin: 0em;
 	padding: 0em;
 }

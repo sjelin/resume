@@ -38,9 +38,9 @@ p {
 strong {
   color: #48a2a8; }
 
-html {
-  background: #EEEEEE; }
-
+@media screen {
+  html {
+    background: #EEEEEE; } }
 body {
   color: #444444;
   max-width: 7.5in;
@@ -3451,6 +3451,6 @@ h2 {
   h2 {
     font-size: 0.962em; } }
 @page {
-  size: 9.08in 11.75in;
+  size: 9.08in 11.93in;
   margin: 0em;
   padding: 0em; }
