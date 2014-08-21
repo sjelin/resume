@@ -20,7 +20,7 @@ window.onload = function() {
 			$this.attr("href", "#"+text.toLowerCase());
 	});
 
-	$name = $(".header h1");
+	$name = $("#header h1");
 	$name.css("width", "100%");
 	$name.css("margin", "0pt");
 	window.onresize();

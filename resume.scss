@@ -5,10 +5,11 @@ $phm: $pvm;
 $about-w: (($pw - 3*$phm)/3);
 $expr-w: $pw - 3*$phm - $about-w;
 $font-size: 0.9em;
-$font-color: #444444;
+$text-color: #444444;
 $base-color: #0395DA;
 $highlight-color: #48A2A8;
 $hr-color: #CCCCCC;
+$strong-text-color: #000000;
 
 .unimportant { display: none; }
 .notes { display: none; }
@@ -17,7 +18,7 @@ $hr-color: #CCCCCC;
 
 a {
 	text-decoration: none;
-	color: $font-color;
+	color: $text-color;
 }
 
 ul.inline {
@@ -33,6 +34,10 @@ ul.reduce-padding {
 	margin: 0em;
 	padding: 0em 0em 0em 2em;
 }
+ul.totally.inline {
+	margin: 0em;
+	padding: 0em;
+}
 
 p {
 	margin-bottom: 0em;
@@ -45,7 +50,7 @@ html {
 }
 
 body {
-	color: $font-color;
+	color: $text-color;
 	max-width: $pw - 2*$phm;
 	min-height: $ph - 2*$pvm;
 	padding: $pvm $phm;
@@ -61,7 +66,7 @@ body {
 	position: relative;
 }
 
-.header {
+#header {
 	position: relative;
 	top: -0.8em;
 	margin-bottom: 3em;
@@ -105,19 +110,18 @@ h2 {
 	&:after {
 		content: " ";
 		position: absolute;
-		height: 2px;
 		top: 0em;
 		bottom: 0em;
+		border-bottom: 2px solid $hr-color;
+		height: 0px;
 		width: 100%;
 		display: inline-block;
-		background: $hr-color;
 		margin: auto 1em;
 	}
 }
-@media print { h2:after { height: 1.5pt; } }
+@media print { h2:after { border-bottom-width: 1.5pt; } }
 
-
-.about, .experience {
+#about, #experience {
 	font-size: $font-size;
 	display: inline-block;
 	top: 10em;
@@ -126,20 +130,20 @@ h2 {
 	}
 	& > *:first-child h2 { margin-top: 0em; }
 }
-.experience {
+#experience {
 	a {
 		text-decoration: underline;
 		color: darken(saturate($highlight-color, 100%), 15%);
 	}
 }
 
-.about {
+#about {
 	h2 {
 		margin-bottom: 0.5em;
 	}
 }
 
-.experience {
+#experience {
 	.dates {
 		font-style: italic;
 		margin: 0.4em 0em 0.5em 0em;
@@ -153,8 +157,40 @@ h2 {
 	}
 }
 
+#skills {
+	$skills-padding: 3em;
+	ol {
+		list-style: none;
+		padding-left: $skills-padding;
+		& > li {
+			margin: 0.5em 0px;
+			position: relative;
+			&:before {
+				content: "B";
+				color: $strong-text-color;
+				font-weight: bold;
+				text-align: center;
+				width: $skills-padding;
+				height: 1.2em;
+				line-height: 1.2em;
+				position: absolute;
+				left: -$skills-padding;
+				top: 0em;
+				bottom: 0em;
+				margin: auto;
+			}
+			&:first-child:before {
+				content: "A";
+			}
+			&:last-child:before {
+				content: "C";
+			}
+		}
+	}
+}
+
 @media screen and (min-width: 450pt) and (max-width: 611pt) {
-	.header {
+	#header {
 		width: 32em;
 		margin-right: auto;
 		margin-left: auto;
@@ -164,7 +200,7 @@ h2 {
 			text-align: center;
 		}
 	}
-	.header .contact {
+	#header .contact {
 		position: absolute; // So it doesn't take up space
 		padding-left: 0.2em;
 		width: 200%;//Prevent overflow
@@ -183,8 +219,8 @@ h2 {
 }
 
 @media print, (min-width: 8.5in) {
-	.header { margin-bottom: 0em; }
-	.header ul.contact {
+	#header { margin-bottom: 0em; }
+	#header ul.contact {
 		top: 0em;
 		& {
 			position: absolute;
@@ -210,12 +246,12 @@ h2 {
 			&:before, &:after { display: none; }
 		}
 	}
-	.about {
+	#about {
 		left: $phm;
 		width: $about-w;
 		h2 { margin-top: 2em; }
 	}
-	.experience {
+	#experience {
 		right: $phm;
 		width: $expr-w;
 		float: right;
@@ -227,8 +263,8 @@ h2 {
 	@media (max-width: #{$i}pt) {
 		$index: (450 - $i) / (450 - 300);
 		body { padding: (1 - 0.4 * $index) * $pvm (1 - 0.4 * $index) * $phm; }
-		.header { font-size: #{1 - 0.33 * $index}em }
-		.header .contact { font-size: #{1 + 0.2 * $index}em }
+		#header { font-size: #{1 - 0.33 * $index}em }
+		#header .contact { font-size: #{1 + 0.2 * $index}em }
 		h2 { font-size: #{1.5 - 0.3 * $index}em }
 	}
 }
