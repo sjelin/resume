@@ -165,7 +165,7 @@ h2 {
 		list-style: none;
 		padding-left: $skills-padding;
 		& > li {
-			margin: 0.5em 0px;
+			margin: 1em 0px;
 			position: relative;
 			&:before {
 				content: "B";
@@ -187,6 +187,16 @@ h2 {
 			&:last-child:before {
 				content: "C";
 			}
+			&:after {
+				content: " ";
+				position: absolute;
+				top: -0.5em;
+				left: 0em;
+				right: 0em;
+				height: 0px;
+				border-bottom: 1px solid transparentize($hr-color, 0.5);
+			}
+			&:first-child:after { display: none; }
 		}
 	}
 }
