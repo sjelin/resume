@@ -52,7 +52,6 @@ body {
   left: 0em;
   right: 0em;
   margin: auto;
-  position: static;
   font-family: Lato;
   font-weight: 300;
   position: relative; }
@@ -225,7 +224,7 @@ h2 {
     left: 0.5in;
     width: 2.33333in; }
     #about h2 {
-      margin-top: 1.6em; }
+      margin-top: 2em; }
 
   #experience {
     right: 0.5in;

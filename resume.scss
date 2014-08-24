@@ -62,7 +62,6 @@ body {
 	left: 0em;
 	right: 0em;
 	margin: auto;
-	position: static;
 	font-family: Lato;
 	font-weight: 300;
 	position: relative;
@@ -261,7 +260,7 @@ h2 {
 	#about {
 		left: $phm;
 		width: $about-w;
-		h2 { margin-top: 1.6em; }
+		h2 { margin-top: 2em; }
 	}
 	#experience {
 		right: $phm;
