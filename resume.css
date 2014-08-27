@@ -89,7 +89,7 @@ body {
 
 @media print {
   #header h1 {
-    letter-spacing: -0.68px; } }
+    letter-spacing: -0.6375px; } }
 h2 {
   position: relative;
   overflow: hidden;
@@ -107,7 +107,7 @@ h2 {
 
 @media print {
   h2:after {
-    border-bottom-width: 1.6pt; } }
+    border-bottom-width: 1.125pt; } }
 #about, #experience {
   font-size: 0.9em;
   display: inline-block;
@@ -168,6 +168,9 @@ h2 {
     #skills ol > li:first-child:after {
       display: none; }
 
+@media print {
+  #skills ol > li:after {
+    border-bottom-width: 0.5625pt; } }
 @media screen and (min-width: 450pt) and (max-width: 611pt) {
   #header {
     width: 32em;

@@ -125,7 +125,7 @@ h2 {
 		margin: auto 1em;
 	}
 }
-@media print { h2:after { border-bottom-width: 1.6pt; } }
+@media print { h2:after { border-bottom-width: 1.125pt; } }
 
 #about, #experience {
 	font-size: $font-size;
@@ -204,6 +204,8 @@ h2 {
 		}
 	}
 }
+@media print { #skills ol > li:after { border-bottom-width: 0.5625pt; } }
+
 
 @media screen and (min-width: 450pt) and (max-width: 611pt) {
 	#header {
