@@ -11,6 +11,8 @@ $highlight-color: #48A2A8;
 $hr-color: #CCCCCC;
 $strong-text-color: #000000;
 
+$ptPerPx: (12 / 16);
+
 .unimportant { display: none; }
 .notes { display: none; }
 @media (min-width: 200pt) { .notes { display: inline; } }
@@ -77,6 +79,7 @@ body {
 	h1 {
 		font-size: 4em;
 		font-family: Playball;
+		letter-spacing: -0.85px;
 		width: 200%;
 	}
 	.contact {
@@ -104,6 +107,8 @@ body {
 	}
 }
 
+@media print { #header h1 { letter-spacing: -0.85px * $ptPerPx; } }
+
 h2 {
 	position: relative;
 	overflow: hidden;
@@ -120,7 +125,7 @@ h2 {
 		margin: auto 1em;
 	}
 }
-@media print { h2:after { border-bottom-width: 1.5pt; } }
+@media print { h2:after { border-bottom-width: 1.6pt; } }
 
 #about, #experience {
 	font-size: $font-size;
@@ -275,7 +280,7 @@ h2 {
 	@media (max-width: #{$i}pt) {
 		$index: (450 - $i) / (450 - 300);
 		body { padding: (1 - 0.4 * $index) * $pvm (1 - 0.4 * $index) * $phm; }
-		#header { font-size: #{1 - 0.33 * $index}em }
+		#header { font-size: #{1 - 0.3 * $index}em }
 		#header .contact { font-size: #{1 + 0.2 * $index}em }
 		h2 { font-size: #{1.5 - 0.3 * $index}em }
 	}
