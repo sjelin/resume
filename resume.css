@@ -1,46 +1,64 @@
+@charset "UTF-8";
 .unimportant {
-  display: none; }
+  display: none;
+}
 
 .notes {
-  display: none; }
+  display: none;
+}
 
 @media (min-width: 200pt) {
   .notes {
-    display: inline; } }
+    display: inline;
+  }
+}
 @media (min-width: 300pt) {
   .unimportant {
-    display: inline; } }
+    display: inline;
+  }
+}
 a {
   text-decoration: none;
-  color: #444444; }
+  color: #444444;
+}
 
 ul.inline {
   list-style: none;
-  padding: 0em 0em 0em 2em; }
-  ul.inline li {
-    display: inline; }
-    ul.inline li:after {
-      content: ","; }
-    ul.inline li:last-child:after {
-      content: ""; }
+  padding: 0em 0em 0em 2em;
+}
+ul.inline li {
+  display: inline;
+}
+ul.inline li:after {
+  content: ",";
+}
+ul.inline li:last-child:after {
+  content: "";
+}
 
 ul.reduce-padding {
   margin: 0em;
-  padding: 0em 0em 0em 2em; }
+  padding: 0em 0em 0em 2em;
+}
 
 ul.totally.inline {
   margin: 0em;
-  padding: 0em; }
+  padding: 0em;
+}
 
 p {
-  margin-bottom: 0em; }
+  margin-bottom: 0em;
+}
 
 strong {
-  color: #48a2a8; }
+  color: #48A2A8;
+}
 
 @media screen {
   html {
-    background: #EEEEEE; } }
+    background: #EEEEEE;
+  }
+}
 body {
   color: #444444;
   max-width: 7.5in;
@@ -54,3422 +72,4817 @@ body {
   margin: auto;
   font-family: Lato;
   font-weight: 300;
-  position: relative; }
+  position: relative;
+}
 
 #header {
   position: relative;
   top: -0.8em;
-  margin-bottom: 3em; }
-  #header > * {
-    margin: 0em; }
-  #header h1 {
-    font-size: 4em;
-    font-family: Playball;
-    letter-spacing: -0.85px;
-    width: 200%; }
-  #header .contact {
-    margin: 0em;
-    padding: 0em; }
-    #header .contact li {
-      position: absolute;
-      left: 0em;
-      right: 0em;
-      text-align: center;
-      display: inline;
-      max-width: 12em;
-      margin: auto; }
-      #header .contact li:first-child {
-        right: auto;
-        text-align: left;
-        z-index: 1; }
-      #header .contact li:last-child {
-        left: auto;
-        text-align: right;
-        z-index: 1; }
+  margin-bottom: 3em;
+}
+#header > * {
+  margin: 0em;
+}
+#header h1 {
+  font-size: 4em;
+  font-family: Playball;
+  letter-spacing: -0.85px;
+  width: 200%;
+}
+#header .contact {
+  margin: 0em;
+  padding: 0em;
+}
+#header .contact li {
+  position: absolute;
+  left: 0em;
+  right: 0em;
+  text-align: center;
+  display: inline;
+  max-width: 12em;
+  margin: auto;
+}
+#header .contact li:first-child {
+  right: auto;
+  text-align: left;
+  z-index: 1;
+}
+#header .contact li:last-child {
+  left: auto;
+  text-align: right;
+  z-index: 1;
+}
 
 @media print {
   #header h1 {
-    letter-spacing: -0.6375px; } }
+    letter-spacing: -0.6375px;
+  }
+}
 h2 {
   position: relative;
   overflow: hidden;
-  color: #0395da; }
-  h2:after {
-    content: " ";
-    position: absolute;
-    top: 0em;
-    bottom: 0em;
-    border-bottom: 2px solid #cccccc;
-    height: 0px;
-    width: 100%;
-    display: inline-block;
-    margin: auto 1em; }
+  color: #0395DA;
+}
+h2:after {
+  content: " ";
+  position: absolute;
+  top: 0em;
+  bottom: 0em;
+  border-bottom: 2px solid #CCCCCC;
+  height: 0px;
+  width: 100%;
+  display: inline-block;
+  margin: auto 1em;
+}
 
 @media print {
   h2:after {
-    border-bottom-width: 1.125pt; } }
+    border-bottom-width: 1.125pt;
+  }
+}
 #about, #experience {
   font-size: 0.9em;
   display: inline-block;
-  top: 10em; }
-  #about h2, #experience h2 {
-    margin-top: 1.5em; }
+  top: 10em;
+}
+#about h2, #experience h2 {
+  margin-top: 1.5em;
+}
 
-#about > *:first-child h2 {
-  margin-top: 0em; }
-
+#experience > *:first-child h2 {
+  margin-top: 0em;
+}
 #experience a {
   text-decoration: underline;
-  color: #0099a3; }
+  color: #0099a4;
+}
 
 #about h2 {
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
 
 #experience .dates {
   font-style: italic;
   margin: 0.4em 0em 0.5em 0em;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+}
 #experience h2 {
-  margin-bottom: 0em; }
+  margin-bottom: 0em;
+}
 #experience ul {
-  margin-top: 0em; }
+  margin-top: 0em;
+}
 
 #skills ol {
   list-style: none;
-  padding-left: 3em; }
-  #skills ol > li {
-    margin: 1em 0px;
-    position: relative; }
-    #skills ol > li:before {
-      content: "B";
-      color: black;
-      font-weight: bold;
-      text-align: center;
-      width: 3em;
-      height: 1.2em;
-      line-height: 1.2em;
-      position: absolute;
-      left: -3em;
-      top: 0em;
-      bottom: 0em;
-      margin: auto; }
-    #skills ol > li:first-child:before {
-      content: "A"; }
-    #skills ol > li:last-child:before {
-      content: "C"; }
-    #skills ol > li:after {
-      content: " ";
-      position: absolute;
-      top: -0.5em;
-      left: 0em;
-      right: 0em;
-      height: 0px;
-      border-bottom: 1px solid rgba(204, 204, 204, 0.5); }
-    #skills ol > li:first-child:after {
-      display: none; }
+  padding-left: 3em;
+}
+#skills ol > li {
+  margin: 1em 0px;
+  position: relative;
+}
+#skills ol > li:before {
+  content: "B";
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  width: 3em;
+  height: 1.2em;
+  line-height: 1.2em;
+  position: absolute;
+  left: -3em;
+  top: 0em;
+  bottom: 0em;
+  margin: auto;
+}
+#skills ol > li:first-child:before {
+  content: "A";
+}
+#skills ol > li:last-child:before {
+  content: "C";
+}
+#skills ol > li:after {
+  content: " ";
+  position: absolute;
+  top: -0.5em;
+  left: 0em;
+  right: 0em;
+  height: 0px;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+}
+#skills ol > li:first-child:after {
+  display: none;
+}
 
 @media print {
   #skills ol > li:after {
-    border-bottom-width: 0.5625pt; } }
+    border-bottom-width: 0.5625pt;
+  }
+}
 @media screen and (min-width: 450pt) and (max-width: 611pt) {
   #header {
     width: 32em;
     margin-right: auto;
-    margin-left: auto; }
-    #header h1 {
-      width: 200%;
-      margin-left: -50%;
-      text-align: center; }
+    margin-left: auto;
+  }
+  #header h1 {
+    width: 200%;
+    margin-left: -50%;
+    text-align: center;
+  }
 
   #header .contact {
     position: absolute;
     padding-left: 0.2em;
-    width: 200%; }
-    #header .contact li {
-      position: static; }
-      #header .contact li:after {
-        margin-left: 0.2em; }
-      #header .contact li:before {
-        margin-right: 0.2em; }
-      #header .contact li:first-child:after, #header .contact li:last-child:before {
-        content: "\00B7";
-        width: 4.5em;
-        text-align: center;
-        display: inline-block; } }
+    width: 200%;
+  }
+  #header .contact li {
+    position: static;
+  }
+  #header .contact li:after {
+    margin-left: 0.2em;
+  }
+  #header .contact li:before {
+    margin-right: 0.2em;
+  }
+  #header .contact li:first-child:after, #header .contact li:last-child:before {
+    content: "·";
+    width: 4.5em;
+    text-align: center;
+    display: inline-block;
+  }
+}
 @media print, (min-width: 8.5in) {
   #header {
-    margin-bottom: 0em; }
+    margin-bottom: 0em;
+  }
 
   #header ul.contact {
-    top: 0em; }
-    #header ul.contact {
-      position: absolute;
-      right: 0em;
-      height: 100%;
-      width: 100%;
-      list-style: none;
-      margin: 0em;
-      padding: 0em; }
-    #header ul.contact > li, #header ul.contact > li:first-child {
-      right: 0em;
-      left: auto;
-      width: 100%;
-      top: 0.25em;
-      bottom: 0.75em;
-      text-align: right;
-      margin: auto;
-      height: 1.2em;
-      line-height: 1.2em; }
-      #header ul.contact > li:first-child, #header ul.contact > li:first-child:first-child {
-        bottom: auto; }
-      #header ul.contact > li:last-child, #header ul.contact > li:first-child:last-child {
-        top: auto; }
-      #header ul.contact > li:before, #header ul.contact > li:after, #header ul.contact > li:first-child:before, #header ul.contact > li:first-child:after {
-        display: none; }
+    top: 0em;
+  }
+  #header ul.contact {
+    position: absolute;
+    right: 0em;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+  }
+  #header ul.contact > li, #header ul.contact > li:first-child {
+    right: 0em;
+    left: auto;
+    width: 100%;
+    top: 0.25em;
+    bottom: 0.75em;
+    text-align: right;
+    margin: auto;
+    height: 1.2em;
+    line-height: 1.2em;
+  }
+  #header ul.contact > li:first-child, #header ul.contact > li:first-child:first-child {
+    bottom: auto;
+  }
+  #header ul.contact > li:last-child, #header ul.contact > li:first-child:last-child {
+    top: auto;
+  }
+  #header ul.contact > li:before, #header ul.contact > li:after, #header ul.contact > li:first-child:before, #header ul.contact > li:first-child:after {
+    display: none;
+  }
 
   #about {
-    left: 0.5in;
-    width: 2.33333in; }
-    #about h2 {
-      margin-top: 2em; }
+    right: 0.5in;
+    width: 1.75in;
+    float: right;
+  }
+  #about > *:first-child h2 {
+    margin-top: 0em;
+  }
 
   #experience {
-    right: 0.5in;
-    width: 4.66667in;
-    float: right; }
-    #experience h2 {
-      margin-top: 1em; }
-    #experience > *:first-child h2 {
-      margin-top: 0em; } }
+    left: 0.5in;
+    width: 5.25in;
+  }
+  #experience h2 {
+    margin-top: 1em;
+  }
+}
 @media (max-width: 449pt) {
   body {
-    padding: 0.49867in 0.49867in; }
+    padding: 0.4986666667in 0.4986666667in;
+  }
 
   #header {
-    font-size: 0.998em; }
+    font-size: 0.998em;
+  }
 
   #header .contact {
-    font-size: 1.00133em; }
+    font-size: 1.0013333333em;
+  }
 
   h2 {
-    font-size: 1.498em; } }
+    font-size: 1.498em;
+  }
+}
 @media (max-width: 448pt) {
   body {
-    padding: 0.49733in 0.49733in; }
+    padding: 0.4973333333in 0.4973333333in;
+  }
 
   #header {
-    font-size: 0.996em; }
+    font-size: 0.996em;
+  }
 
   #header .contact {
-    font-size: 1.00267em; }
+    font-size: 1.0026666667em;
+  }
 
   h2 {
-    font-size: 1.496em; } }
+    font-size: 1.496em;
+  }
+}
 @media (max-width: 447pt) {
   body {
-    padding: 0.496in 0.496in; }
+    padding: 0.496in 0.496in;
+  }
 
   #header {
-    font-size: 0.994em; }
+    font-size: 0.994em;
+  }
 
   #header .contact {
-    font-size: 1.004em; }
+    font-size: 1.004em;
+  }
 
   h2 {
-    font-size: 1.494em; } }
+    font-size: 1.494em;
+  }
+}
 @media (max-width: 446pt) {
   body {
-    padding: 0.49467in 0.49467in; }
+    padding: 0.4946666667in 0.4946666667in;
+  }
 
   #header {
-    font-size: 0.992em; }
+    font-size: 0.992em;
+  }
 
   #header .contact {
-    font-size: 1.00533em; }
+    font-size: 1.0053333333em;
+  }
 
   h2 {
-    font-size: 1.492em; } }
+    font-size: 1.492em;
+  }
+}
 @media (max-width: 445pt) {
   body {
-    padding: 0.49333in 0.49333in; }
+    padding: 0.4933333333in 0.4933333333in;
+  }
 
   #header {
-    font-size: 0.99em; }
+    font-size: 0.99em;
+  }
 
   #header .contact {
-    font-size: 1.00667em; }
+    font-size: 1.0066666667em;
+  }
 
   h2 {
-    font-size: 1.49em; } }
+    font-size: 1.49em;
+  }
+}
 @media (max-width: 444pt) {
   body {
-    padding: 0.492in 0.492in; }
+    padding: 0.492in 0.492in;
+  }
 
   #header {
-    font-size: 0.988em; }
+    font-size: 0.988em;
+  }
 
   #header .contact {
-    font-size: 1.008em; }
+    font-size: 1.008em;
+  }
 
   h2 {
-    font-size: 1.488em; } }
+    font-size: 1.488em;
+  }
+}
 @media (max-width: 443pt) {
   body {
-    padding: 0.49067in 0.49067in; }
+    padding: 0.4906666667in 0.4906666667in;
+  }
 
   #header {
-    font-size: 0.986em; }
+    font-size: 0.986em;
+  }
 
   #header .contact {
-    font-size: 1.00933em; }
+    font-size: 1.0093333333em;
+  }
 
   h2 {
-    font-size: 1.486em; } }
+    font-size: 1.486em;
+  }
+}
 @media (max-width: 442pt) {
   body {
-    padding: 0.48933in 0.48933in; }
+    padding: 0.4893333333in 0.4893333333in;
+  }
 
   #header {
-    font-size: 0.984em; }
+    font-size: 0.984em;
+  }
 
   #header .contact {
-    font-size: 1.01067em; }
+    font-size: 1.0106666667em;
+  }
 
   h2 {
-    font-size: 1.484em; } }
+    font-size: 1.484em;
+  }
+}
 @media (max-width: 441pt) {
   body {
-    padding: 0.488in 0.488in; }
+    padding: 0.488in 0.488in;
+  }
 
   #header {
-    font-size: 0.982em; }
+    font-size: 0.982em;
+  }
 
   #header .contact {
-    font-size: 1.012em; }
+    font-size: 1.012em;
+  }
 
   h2 {
-    font-size: 1.482em; } }
+    font-size: 1.482em;
+  }
+}
 @media (max-width: 440pt) {
   body {
-    padding: 0.48667in 0.48667in; }
+    padding: 0.4866666667in 0.4866666667in;
+  }
 
   #header {
-    font-size: 0.98em; }
+    font-size: 0.98em;
+  }
 
   #header .contact {
-    font-size: 1.01333em; }
+    font-size: 1.0133333333em;
+  }
 
   h2 {
-    font-size: 1.48em; } }
+    font-size: 1.48em;
+  }
+}
 @media (max-width: 439pt) {
   body {
-    padding: 0.48533in 0.48533in; }
+    padding: 0.4853333333in 0.4853333333in;
+  }
 
   #header {
-    font-size: 0.978em; }
+    font-size: 0.978em;
+  }
 
   #header .contact {
-    font-size: 1.01467em; }
+    font-size: 1.0146666667em;
+  }
 
   h2 {
-    font-size: 1.478em; } }
+    font-size: 1.478em;
+  }
+}
 @media (max-width: 438pt) {
   body {
-    padding: 0.484in 0.484in; }
+    padding: 0.484in 0.484in;
+  }
 
   #header {
-    font-size: 0.976em; }
+    font-size: 0.976em;
+  }
 
   #header .contact {
-    font-size: 1.016em; }
+    font-size: 1.016em;
+  }
 
   h2 {
-    font-size: 1.476em; } }
+    font-size: 1.476em;
+  }
+}
 @media (max-width: 437pt) {
   body {
-    padding: 0.48267in 0.48267in; }
+    padding: 0.4826666667in 0.4826666667in;
+  }
 
   #header {
-    font-size: 0.974em; }
+    font-size: 0.974em;
+  }
 
   #header .contact {
-    font-size: 1.01733em; }
+    font-size: 1.0173333333em;
+  }
 
   h2 {
-    font-size: 1.474em; } }
+    font-size: 1.474em;
+  }
+}
 @media (max-width: 436pt) {
   body {
-    padding: 0.48133in 0.48133in; }
+    padding: 0.4813333333in 0.4813333333in;
+  }
 
   #header {
-    font-size: 0.972em; }
+    font-size: 0.972em;
+  }
 
   #header .contact {
-    font-size: 1.01867em; }
+    font-size: 1.0186666667em;
+  }
 
   h2 {
-    font-size: 1.472em; } }
+    font-size: 1.472em;
+  }
+}
 @media (max-width: 435pt) {
   body {
-    padding: 0.48in 0.48in; }
+    padding: 0.48in 0.48in;
+  }
 
   #header {
-    font-size: 0.97em; }
+    font-size: 0.97em;
+  }
 
   #header .contact {
-    font-size: 1.02em; }
+    font-size: 1.02em;
+  }
 
   h2 {
-    font-size: 1.47em; } }
+    font-size: 1.47em;
+  }
+}
 @media (max-width: 434pt) {
   body {
-    padding: 0.47867in 0.47867in; }
+    padding: 0.4786666667in 0.4786666667in;
+  }
 
   #header {
-    font-size: 0.968em; }
+    font-size: 0.968em;
+  }
 
   #header .contact {
-    font-size: 1.02133em; }
+    font-size: 1.0213333333em;
+  }
 
   h2 {
-    font-size: 1.468em; } }
+    font-size: 1.468em;
+  }
+}
 @media (max-width: 433pt) {
   body {
-    padding: 0.47733in 0.47733in; }
+    padding: 0.4773333333in 0.4773333333in;
+  }
 
   #header {
-    font-size: 0.966em; }
+    font-size: 0.966em;
+  }
 
   #header .contact {
-    font-size: 1.02267em; }
+    font-size: 1.0226666667em;
+  }
 
   h2 {
-    font-size: 1.466em; } }
+    font-size: 1.466em;
+  }
+}
 @media (max-width: 432pt) {
   body {
-    padding: 0.476in 0.476in; }
+    padding: 0.476in 0.476in;
+  }
 
   #header {
-    font-size: 0.964em; }
+    font-size: 0.964em;
+  }
 
   #header .contact {
-    font-size: 1.024em; }
+    font-size: 1.024em;
+  }
 
   h2 {
-    font-size: 1.464em; } }
+    font-size: 1.464em;
+  }
+}
 @media (max-width: 431pt) {
   body {
-    padding: 0.47467in 0.47467in; }
+    padding: 0.4746666667in 0.4746666667in;
+  }
 
   #header {
-    font-size: 0.962em; }
+    font-size: 0.962em;
+  }
 
   #header .contact {
-    font-size: 1.02533em; }
+    font-size: 1.0253333333em;
+  }
 
   h2 {
-    font-size: 1.462em; } }
+    font-size: 1.462em;
+  }
+}
 @media (max-width: 430pt) {
   body {
-    padding: 0.47333in 0.47333in; }
+    padding: 0.4733333333in 0.4733333333in;
+  }
 
   #header {
-    font-size: 0.96em; }
+    font-size: 0.96em;
+  }
 
   #header .contact {
-    font-size: 1.02667em; }
+    font-size: 1.0266666667em;
+  }
 
   h2 {
-    font-size: 1.46em; } }
+    font-size: 1.46em;
+  }
+}
 @media (max-width: 429pt) {
   body {
-    padding: 0.472in 0.472in; }
+    padding: 0.472in 0.472in;
+  }
 
   #header {
-    font-size: 0.958em; }
+    font-size: 0.958em;
+  }
 
   #header .contact {
-    font-size: 1.028em; }
+    font-size: 1.028em;
+  }
 
   h2 {
-    font-size: 1.458em; } }
+    font-size: 1.458em;
+  }
+}
 @media (max-width: 428pt) {
   body {
-    padding: 0.47067in 0.47067in; }
+    padding: 0.4706666667in 0.4706666667in;
+  }
 
   #header {
-    font-size: 0.956em; }
+    font-size: 0.956em;
+  }
 
   #header .contact {
-    font-size: 1.02933em; }
+    font-size: 1.0293333333em;
+  }
 
   h2 {
-    font-size: 1.456em; } }
+    font-size: 1.456em;
+  }
+}
 @media (max-width: 427pt) {
   body {
-    padding: 0.46933in 0.46933in; }
+    padding: 0.4693333333in 0.4693333333in;
+  }
 
   #header {
-    font-size: 0.954em; }
+    font-size: 0.954em;
+  }
 
   #header .contact {
-    font-size: 1.03067em; }
+    font-size: 1.0306666667em;
+  }
 
   h2 {
-    font-size: 1.454em; } }
+    font-size: 1.454em;
+  }
+}
 @media (max-width: 426pt) {
   body {
-    padding: 0.468in 0.468in; }
+    padding: 0.468in 0.468in;
+  }
 
   #header {
-    font-size: 0.952em; }
+    font-size: 0.952em;
+  }
 
   #header .contact {
-    font-size: 1.032em; }
+    font-size: 1.032em;
+  }
 
   h2 {
-    font-size: 1.452em; } }
+    font-size: 1.452em;
+  }
+}
 @media (max-width: 425pt) {
   body {
-    padding: 0.46667in 0.46667in; }
+    padding: 0.4666666667in 0.4666666667in;
+  }
 
   #header {
-    font-size: 0.95em; }
+    font-size: 0.95em;
+  }
 
   #header .contact {
-    font-size: 1.03333em; }
+    font-size: 1.0333333333em;
+  }
 
   h2 {
-    font-size: 1.45em; } }
+    font-size: 1.45em;
+  }
+}
 @media (max-width: 424pt) {
   body {
-    padding: 0.46533in 0.46533in; }
+    padding: 0.4653333333in 0.4653333333in;
+  }
 
   #header {
-    font-size: 0.948em; }
+    font-size: 0.948em;
+  }
 
   #header .contact {
-    font-size: 1.03467em; }
+    font-size: 1.0346666667em;
+  }
 
   h2 {
-    font-size: 1.448em; } }
+    font-size: 1.448em;
+  }
+}
 @media (max-width: 423pt) {
   body {
-    padding: 0.464in 0.464in; }
+    padding: 0.464in 0.464in;
+  }
 
   #header {
-    font-size: 0.946em; }
+    font-size: 0.946em;
+  }
 
   #header .contact {
-    font-size: 1.036em; }
+    font-size: 1.036em;
+  }
 
   h2 {
-    font-size: 1.446em; } }
+    font-size: 1.446em;
+  }
+}
 @media (max-width: 422pt) {
   body {
-    padding: 0.46267in 0.46267in; }
+    padding: 0.4626666667in 0.4626666667in;
+  }
 
   #header {
-    font-size: 0.944em; }
+    font-size: 0.944em;
+  }
 
   #header .contact {
-    font-size: 1.03733em; }
+    font-size: 1.0373333333em;
+  }
 
   h2 {
-    font-size: 1.444em; } }
+    font-size: 1.444em;
+  }
+}
 @media (max-width: 421pt) {
   body {
-    padding: 0.46133in 0.46133in; }
+    padding: 0.4613333333in 0.4613333333in;
+  }
 
   #header {
-    font-size: 0.942em; }
+    font-size: 0.942em;
+  }
 
   #header .contact {
-    font-size: 1.03867em; }
+    font-size: 1.0386666667em;
+  }
 
   h2 {
-    font-size: 1.442em; } }
+    font-size: 1.442em;
+  }
+}
 @media (max-width: 420pt) {
   body {
-    padding: 0.46in 0.46in; }
+    padding: 0.46in 0.46in;
+  }
 
   #header {
-    font-size: 0.94em; }
+    font-size: 0.94em;
+  }
 
   #header .contact {
-    font-size: 1.04em; }
+    font-size: 1.04em;
+  }
 
   h2 {
-    font-size: 1.44em; } }
+    font-size: 1.44em;
+  }
+}
 @media (max-width: 419pt) {
   body {
-    padding: 0.45867in 0.45867in; }
+    padding: 0.4586666667in 0.4586666667in;
+  }
 
   #header {
-    font-size: 0.938em; }
+    font-size: 0.938em;
+  }
 
   #header .contact {
-    font-size: 1.04133em; }
+    font-size: 1.0413333333em;
+  }
 
   h2 {
-    font-size: 1.438em; } }
+    font-size: 1.438em;
+  }
+}
 @media (max-width: 418pt) {
   body {
-    padding: 0.45733in 0.45733in; }
+    padding: 0.4573333333in 0.4573333333in;
+  }
 
   #header {
-    font-size: 0.936em; }
+    font-size: 0.936em;
+  }
 
   #header .contact {
-    font-size: 1.04267em; }
+    font-size: 1.0426666667em;
+  }
 
   h2 {
-    font-size: 1.436em; } }
+    font-size: 1.436em;
+  }
+}
 @media (max-width: 417pt) {
   body {
-    padding: 0.456in 0.456in; }
+    padding: 0.456in 0.456in;
+  }
 
   #header {
-    font-size: 0.934em; }
+    font-size: 0.934em;
+  }
 
   #header .contact {
-    font-size: 1.044em; }
+    font-size: 1.044em;
+  }
 
   h2 {
-    font-size: 1.434em; } }
+    font-size: 1.434em;
+  }
+}
 @media (max-width: 416pt) {
   body {
-    padding: 0.45467in 0.45467in; }
+    padding: 0.4546666667in 0.4546666667in;
+  }
 
   #header {
-    font-size: 0.932em; }
+    font-size: 0.932em;
+  }
 
   #header .contact {
-    font-size: 1.04533em; }
+    font-size: 1.0453333333em;
+  }
 
   h2 {
-    font-size: 1.432em; } }
+    font-size: 1.432em;
+  }
+}
 @media (max-width: 415pt) {
   body {
-    padding: 0.45333in 0.45333in; }
+    padding: 0.4533333333in 0.4533333333in;
+  }
 
   #header {
-    font-size: 0.93em; }
+    font-size: 0.93em;
+  }
 
   #header .contact {
-    font-size: 1.04667em; }
+    font-size: 1.0466666667em;
+  }
 
   h2 {
-    font-size: 1.43em; } }
+    font-size: 1.43em;
+  }
+}
 @media (max-width: 414pt) {
   body {
-    padding: 0.452in 0.452in; }
+    padding: 0.452in 0.452in;
+  }
 
   #header {
-    font-size: 0.928em; }
+    font-size: 0.928em;
+  }
 
   #header .contact {
-    font-size: 1.048em; }
+    font-size: 1.048em;
+  }
 
   h2 {
-    font-size: 1.428em; } }
+    font-size: 1.428em;
+  }
+}
 @media (max-width: 413pt) {
   body {
-    padding: 0.45067in 0.45067in; }
+    padding: 0.4506666667in 0.4506666667in;
+  }
 
   #header {
-    font-size: 0.926em; }
+    font-size: 0.926em;
+  }
 
   #header .contact {
-    font-size: 1.04933em; }
+    font-size: 1.0493333333em;
+  }
 
   h2 {
-    font-size: 1.426em; } }
+    font-size: 1.426em;
+  }
+}
 @media (max-width: 412pt) {
   body {
-    padding: 0.44933in 0.44933in; }
+    padding: 0.4493333333in 0.4493333333in;
+  }
 
   #header {
-    font-size: 0.924em; }
+    font-size: 0.924em;
+  }
 
   #header .contact {
-    font-size: 1.05067em; }
+    font-size: 1.0506666667em;
+  }
 
   h2 {
-    font-size: 1.424em; } }
+    font-size: 1.424em;
+  }
+}
 @media (max-width: 411pt) {
   body {
-    padding: 0.448in 0.448in; }
+    padding: 0.448in 0.448in;
+  }
 
   #header {
-    font-size: 0.922em; }
+    font-size: 0.922em;
+  }
 
   #header .contact {
-    font-size: 1.052em; }
+    font-size: 1.052em;
+  }
 
   h2 {
-    font-size: 1.422em; } }
+    font-size: 1.422em;
+  }
+}
 @media (max-width: 410pt) {
   body {
-    padding: 0.44667in 0.44667in; }
+    padding: 0.4466666667in 0.4466666667in;
+  }
 
   #header {
-    font-size: 0.92em; }
+    font-size: 0.92em;
+  }
 
   #header .contact {
-    font-size: 1.05333em; }
+    font-size: 1.0533333333em;
+  }
 
   h2 {
-    font-size: 1.42em; } }
+    font-size: 1.42em;
+  }
+}
 @media (max-width: 409pt) {
   body {
-    padding: 0.44533in 0.44533in; }
+    padding: 0.4453333333in 0.4453333333in;
+  }
 
   #header {
-    font-size: 0.918em; }
+    font-size: 0.918em;
+  }
 
   #header .contact {
-    font-size: 1.05467em; }
+    font-size: 1.0546666667em;
+  }
 
   h2 {
-    font-size: 1.418em; } }
+    font-size: 1.418em;
+  }
+}
 @media (max-width: 408pt) {
   body {
-    padding: 0.444in 0.444in; }
+    padding: 0.444in 0.444in;
+  }
 
   #header {
-    font-size: 0.916em; }
+    font-size: 0.916em;
+  }
 
   #header .contact {
-    font-size: 1.056em; }
+    font-size: 1.056em;
+  }
 
   h2 {
-    font-size: 1.416em; } }
+    font-size: 1.416em;
+  }
+}
 @media (max-width: 407pt) {
   body {
-    padding: 0.44267in 0.44267in; }
+    padding: 0.4426666667in 0.4426666667in;
+  }
 
   #header {
-    font-size: 0.914em; }
+    font-size: 0.914em;
+  }
 
   #header .contact {
-    font-size: 1.05733em; }
+    font-size: 1.0573333333em;
+  }
 
   h2 {
-    font-size: 1.414em; } }
+    font-size: 1.414em;
+  }
+}
 @media (max-width: 406pt) {
   body {
-    padding: 0.44133in 0.44133in; }
+    padding: 0.4413333333in 0.4413333333in;
+  }
 
   #header {
-    font-size: 0.912em; }
+    font-size: 0.912em;
+  }
 
   #header .contact {
-    font-size: 1.05867em; }
+    font-size: 1.0586666667em;
+  }
 
   h2 {
-    font-size: 1.412em; } }
+    font-size: 1.412em;
+  }
+}
 @media (max-width: 405pt) {
   body {
-    padding: 0.44in 0.44in; }
+    padding: 0.44in 0.44in;
+  }
 
   #header {
-    font-size: 0.91em; }
+    font-size: 0.91em;
+  }
 
   #header .contact {
-    font-size: 1.06em; }
+    font-size: 1.06em;
+  }
 
   h2 {
-    font-size: 1.41em; } }
+    font-size: 1.41em;
+  }
+}
 @media (max-width: 404pt) {
   body {
-    padding: 0.43867in 0.43867in; }
+    padding: 0.4386666667in 0.4386666667in;
+  }
 
   #header {
-    font-size: 0.908em; }
+    font-size: 0.908em;
+  }
 
   #header .contact {
-    font-size: 1.06133em; }
+    font-size: 1.0613333333em;
+  }
 
   h2 {
-    font-size: 1.408em; } }
+    font-size: 1.408em;
+  }
+}
 @media (max-width: 403pt) {
   body {
-    padding: 0.43733in 0.43733in; }
+    padding: 0.4373333333in 0.4373333333in;
+  }
 
   #header {
-    font-size: 0.906em; }
+    font-size: 0.906em;
+  }
 
   #header .contact {
-    font-size: 1.06267em; }
+    font-size: 1.0626666667em;
+  }
 
   h2 {
-    font-size: 1.406em; } }
+    font-size: 1.406em;
+  }
+}
 @media (max-width: 402pt) {
   body {
-    padding: 0.436in 0.436in; }
+    padding: 0.436in 0.436in;
+  }
 
   #header {
-    font-size: 0.904em; }
+    font-size: 0.904em;
+  }
 
   #header .contact {
-    font-size: 1.064em; }
+    font-size: 1.064em;
+  }
 
   h2 {
-    font-size: 1.404em; } }
+    font-size: 1.404em;
+  }
+}
 @media (max-width: 401pt) {
   body {
-    padding: 0.43467in 0.43467in; }
+    padding: 0.4346666667in 0.4346666667in;
+  }
 
   #header {
-    font-size: 0.902em; }
+    font-size: 0.902em;
+  }
 
   #header .contact {
-    font-size: 1.06533em; }
+    font-size: 1.0653333333em;
+  }
 
   h2 {
-    font-size: 1.402em; } }
+    font-size: 1.402em;
+  }
+}
 @media (max-width: 400pt) {
   body {
-    padding: 0.43333in 0.43333in; }
+    padding: 0.4333333333in 0.4333333333in;
+  }
 
   #header {
-    font-size: 0.9em; }
+    font-size: 0.9em;
+  }
 
   #header .contact {
-    font-size: 1.06667em; }
+    font-size: 1.0666666667em;
+  }
 
   h2 {
-    font-size: 1.4em; } }
+    font-size: 1.4em;
+  }
+}
 @media (max-width: 399pt) {
   body {
-    padding: 0.432in 0.432in; }
+    padding: 0.432in 0.432in;
+  }
 
   #header {
-    font-size: 0.898em; }
+    font-size: 0.898em;
+  }
 
   #header .contact {
-    font-size: 1.068em; }
+    font-size: 1.068em;
+  }
 
   h2 {
-    font-size: 1.398em; } }
+    font-size: 1.398em;
+  }
+}
 @media (max-width: 398pt) {
   body {
-    padding: 0.43067in 0.43067in; }
+    padding: 0.4306666667in 0.4306666667in;
+  }
 
   #header {
-    font-size: 0.896em; }
+    font-size: 0.896em;
+  }
 
   #header .contact {
-    font-size: 1.06933em; }
+    font-size: 1.0693333333em;
+  }
 
   h2 {
-    font-size: 1.396em; } }
+    font-size: 1.396em;
+  }
+}
 @media (max-width: 397pt) {
   body {
-    padding: 0.42933in 0.42933in; }
+    padding: 0.4293333333in 0.4293333333in;
+  }
 
   #header {
-    font-size: 0.894em; }
+    font-size: 0.894em;
+  }
 
   #header .contact {
-    font-size: 1.07067em; }
+    font-size: 1.0706666667em;
+  }
 
   h2 {
-    font-size: 1.394em; } }
+    font-size: 1.394em;
+  }
+}
 @media (max-width: 396pt) {
   body {
-    padding: 0.428in 0.428in; }
+    padding: 0.428in 0.428in;
+  }
 
   #header {
-    font-size: 0.892em; }
+    font-size: 0.892em;
+  }
 
   #header .contact {
-    font-size: 1.072em; }
+    font-size: 1.072em;
+  }
 
   h2 {
-    font-size: 1.392em; } }
+    font-size: 1.392em;
+  }
+}
 @media (max-width: 395pt) {
   body {
-    padding: 0.42667in 0.42667in; }
+    padding: 0.4266666667in 0.4266666667in;
+  }
 
   #header {
-    font-size: 0.89em; }
+    font-size: 0.89em;
+  }
 
   #header .contact {
-    font-size: 1.07333em; }
+    font-size: 1.0733333333em;
+  }
 
   h2 {
-    font-size: 1.39em; } }
+    font-size: 1.39em;
+  }
+}
 @media (max-width: 394pt) {
   body {
-    padding: 0.42533in 0.42533in; }
+    padding: 0.4253333333in 0.4253333333in;
+  }
 
   #header {
-    font-size: 0.888em; }
+    font-size: 0.888em;
+  }
 
   #header .contact {
-    font-size: 1.07467em; }
+    font-size: 1.0746666667em;
+  }
 
   h2 {
-    font-size: 1.388em; } }
+    font-size: 1.388em;
+  }
+}
 @media (max-width: 393pt) {
   body {
-    padding: 0.424in 0.424in; }
+    padding: 0.424in 0.424in;
+  }
 
   #header {
-    font-size: 0.886em; }
+    font-size: 0.886em;
+  }
 
   #header .contact {
-    font-size: 1.076em; }
+    font-size: 1.076em;
+  }
 
   h2 {
-    font-size: 1.386em; } }
+    font-size: 1.386em;
+  }
+}
 @media (max-width: 392pt) {
   body {
-    padding: 0.42267in 0.42267in; }
+    padding: 0.4226666667in 0.4226666667in;
+  }
 
   #header {
-    font-size: 0.884em; }
+    font-size: 0.884em;
+  }
 
   #header .contact {
-    font-size: 1.07733em; }
+    font-size: 1.0773333333em;
+  }
 
   h2 {
-    font-size: 1.384em; } }
+    font-size: 1.384em;
+  }
+}
 @media (max-width: 391pt) {
   body {
-    padding: 0.42133in 0.42133in; }
+    padding: 0.4213333333in 0.4213333333in;
+  }
 
   #header {
-    font-size: 0.882em; }
+    font-size: 0.882em;
+  }
 
   #header .contact {
-    font-size: 1.07867em; }
+    font-size: 1.0786666667em;
+  }
 
   h2 {
-    font-size: 1.382em; } }
+    font-size: 1.382em;
+  }
+}
 @media (max-width: 390pt) {
   body {
-    padding: 0.42in 0.42in; }
+    padding: 0.42in 0.42in;
+  }
 
   #header {
-    font-size: 0.88em; }
+    font-size: 0.88em;
+  }
 
   #header .contact {
-    font-size: 1.08em; }
+    font-size: 1.08em;
+  }
 
   h2 {
-    font-size: 1.38em; } }
+    font-size: 1.38em;
+  }
+}
 @media (max-width: 389pt) {
   body {
-    padding: 0.41867in 0.41867in; }
+    padding: 0.4186666667in 0.4186666667in;
+  }
 
   #header {
-    font-size: 0.878em; }
+    font-size: 0.878em;
+  }
 
   #header .contact {
-    font-size: 1.08133em; }
+    font-size: 1.0813333333em;
+  }
 
   h2 {
-    font-size: 1.378em; } }
+    font-size: 1.378em;
+  }
+}
 @media (max-width: 388pt) {
   body {
-    padding: 0.41733in 0.41733in; }
+    padding: 0.4173333333in 0.4173333333in;
+  }
 
   #header {
-    font-size: 0.876em; }
+    font-size: 0.876em;
+  }
 
   #header .contact {
-    font-size: 1.08267em; }
+    font-size: 1.0826666667em;
+  }
 
   h2 {
-    font-size: 1.376em; } }
+    font-size: 1.376em;
+  }
+}
 @media (max-width: 387pt) {
   body {
-    padding: 0.416in 0.416in; }
+    padding: 0.416in 0.416in;
+  }
 
   #header {
-    font-size: 0.874em; }
+    font-size: 0.874em;
+  }
 
   #header .contact {
-    font-size: 1.084em; }
+    font-size: 1.084em;
+  }
 
   h2 {
-    font-size: 1.374em; } }
+    font-size: 1.374em;
+  }
+}
 @media (max-width: 386pt) {
   body {
-    padding: 0.41467in 0.41467in; }
+    padding: 0.4146666667in 0.4146666667in;
+  }
 
   #header {
-    font-size: 0.872em; }
+    font-size: 0.872em;
+  }
 
   #header .contact {
-    font-size: 1.08533em; }
+    font-size: 1.0853333333em;
+  }
 
   h2 {
-    font-size: 1.372em; } }
+    font-size: 1.372em;
+  }
+}
 @media (max-width: 385pt) {
   body {
-    padding: 0.41333in 0.41333in; }
+    padding: 0.4133333333in 0.4133333333in;
+  }
 
   #header {
-    font-size: 0.87em; }
+    font-size: 0.87em;
+  }
 
   #header .contact {
-    font-size: 1.08667em; }
+    font-size: 1.0866666667em;
+  }
 
   h2 {
-    font-size: 1.37em; } }
+    font-size: 1.37em;
+  }
+}
 @media (max-width: 384pt) {
   body {
-    padding: 0.412in 0.412in; }
+    padding: 0.412in 0.412in;
+  }
 
   #header {
-    font-size: 0.868em; }
+    font-size: 0.868em;
+  }
 
   #header .contact {
-    font-size: 1.088em; }
+    font-size: 1.088em;
+  }
 
   h2 {
-    font-size: 1.368em; } }
+    font-size: 1.368em;
+  }
+}
 @media (max-width: 383pt) {
   body {
-    padding: 0.41067in 0.41067in; }
+    padding: 0.4106666667in 0.4106666667in;
+  }
 
   #header {
-    font-size: 0.866em; }
+    font-size: 0.866em;
+  }
 
   #header .contact {
-    font-size: 1.08933em; }
+    font-size: 1.0893333333em;
+  }
 
   h2 {
-    font-size: 1.366em; } }
+    font-size: 1.366em;
+  }
+}
 @media (max-width: 382pt) {
   body {
-    padding: 0.40933in 0.40933in; }
+    padding: 0.4093333333in 0.4093333333in;
+  }
 
   #header {
-    font-size: 0.864em; }
+    font-size: 0.864em;
+  }
 
   #header .contact {
-    font-size: 1.09067em; }
+    font-size: 1.0906666667em;
+  }
 
   h2 {
-    font-size: 1.364em; } }
+    font-size: 1.364em;
+  }
+}
 @media (max-width: 381pt) {
   body {
-    padding: 0.408in 0.408in; }
+    padding: 0.408in 0.408in;
+  }
 
   #header {
-    font-size: 0.862em; }
+    font-size: 0.862em;
+  }
 
   #header .contact {
-    font-size: 1.092em; }
+    font-size: 1.092em;
+  }
 
   h2 {
-    font-size: 1.362em; } }
+    font-size: 1.362em;
+  }
+}
 @media (max-width: 380pt) {
   body {
-    padding: 0.40667in 0.40667in; }
+    padding: 0.4066666667in 0.4066666667in;
+  }
 
   #header {
-    font-size: 0.86em; }
+    font-size: 0.86em;
+  }
 
   #header .contact {
-    font-size: 1.09333em; }
+    font-size: 1.0933333333em;
+  }
 
   h2 {
-    font-size: 1.36em; } }
+    font-size: 1.36em;
+  }
+}
 @media (max-width: 379pt) {
   body {
-    padding: 0.40533in 0.40533in; }
+    padding: 0.4053333333in 0.4053333333in;
+  }
 
   #header {
-    font-size: 0.858em; }
+    font-size: 0.858em;
+  }
 
   #header .contact {
-    font-size: 1.09467em; }
+    font-size: 1.0946666667em;
+  }
 
   h2 {
-    font-size: 1.358em; } }
+    font-size: 1.358em;
+  }
+}
 @media (max-width: 378pt) {
   body {
-    padding: 0.404in 0.404in; }
+    padding: 0.404in 0.404in;
+  }
 
   #header {
-    font-size: 0.856em; }
+    font-size: 0.856em;
+  }
 
   #header .contact {
-    font-size: 1.096em; }
+    font-size: 1.096em;
+  }
 
   h2 {
-    font-size: 1.356em; } }
+    font-size: 1.356em;
+  }
+}
 @media (max-width: 377pt) {
   body {
-    padding: 0.40267in 0.40267in; }
+    padding: 0.4026666667in 0.4026666667in;
+  }
 
   #header {
-    font-size: 0.854em; }
+    font-size: 0.854em;
+  }
 
   #header .contact {
-    font-size: 1.09733em; }
+    font-size: 1.0973333333em;
+  }
 
   h2 {
-    font-size: 1.354em; } }
+    font-size: 1.354em;
+  }
+}
 @media (max-width: 376pt) {
   body {
-    padding: 0.40133in 0.40133in; }
+    padding: 0.4013333333in 0.4013333333in;
+  }
 
   #header {
-    font-size: 0.852em; }
+    font-size: 0.852em;
+  }
 
   #header .contact {
-    font-size: 1.09867em; }
+    font-size: 1.0986666667em;
+  }
 
   h2 {
-    font-size: 1.352em; } }
+    font-size: 1.352em;
+  }
+}
 @media (max-width: 375pt) {
   body {
-    padding: 0.4in 0.4in; }
+    padding: 0.4in 0.4in;
+  }
 
   #header {
-    font-size: 0.85em; }
+    font-size: 0.85em;
+  }
 
   #header .contact {
-    font-size: 1.1em; }
+    font-size: 1.1em;
+  }
 
   h2 {
-    font-size: 1.35em; } }
+    font-size: 1.35em;
+  }
+}
 @media (max-width: 374pt) {
   body {
-    padding: 0.39867in 0.39867in; }
+    padding: 0.3986666667in 0.3986666667in;
+  }
 
   #header {
-    font-size: 0.848em; }
+    font-size: 0.848em;
+  }
 
   #header .contact {
-    font-size: 1.10133em; }
+    font-size: 1.1013333333em;
+  }
 
   h2 {
-    font-size: 1.348em; } }
+    font-size: 1.348em;
+  }
+}
 @media (max-width: 373pt) {
   body {
-    padding: 0.39733in 0.39733in; }
+    padding: 0.3973333333in 0.3973333333in;
+  }
 
   #header {
-    font-size: 0.846em; }
+    font-size: 0.846em;
+  }
 
   #header .contact {
-    font-size: 1.10267em; }
+    font-size: 1.1026666667em;
+  }
 
   h2 {
-    font-size: 1.346em; } }
+    font-size: 1.346em;
+  }
+}
 @media (max-width: 372pt) {
   body {
-    padding: 0.396in 0.396in; }
+    padding: 0.396in 0.396in;
+  }
 
   #header {
-    font-size: 0.844em; }
+    font-size: 0.844em;
+  }
 
   #header .contact {
-    font-size: 1.104em; }
+    font-size: 1.104em;
+  }
 
   h2 {
-    font-size: 1.344em; } }
+    font-size: 1.344em;
+  }
+}
 @media (max-width: 371pt) {
   body {
-    padding: 0.39467in 0.39467in; }
+    padding: 0.3946666667in 0.3946666667in;
+  }
 
   #header {
-    font-size: 0.842em; }
+    font-size: 0.842em;
+  }
 
   #header .contact {
-    font-size: 1.10533em; }
+    font-size: 1.1053333333em;
+  }
 
   h2 {
-    font-size: 1.342em; } }
+    font-size: 1.342em;
+  }
+}
 @media (max-width: 370pt) {
   body {
-    padding: 0.39333in 0.39333in; }
+    padding: 0.3933333333in 0.3933333333in;
+  }
 
   #header {
-    font-size: 0.84em; }
+    font-size: 0.84em;
+  }
 
   #header .contact {
-    font-size: 1.10667em; }
+    font-size: 1.1066666667em;
+  }
 
   h2 {
-    font-size: 1.34em; } }
+    font-size: 1.34em;
+  }
+}
 @media (max-width: 369pt) {
   body {
-    padding: 0.392in 0.392in; }
+    padding: 0.392in 0.392in;
+  }
 
   #header {
-    font-size: 0.838em; }
+    font-size: 0.838em;
+  }
 
   #header .contact {
-    font-size: 1.108em; }
+    font-size: 1.108em;
+  }
 
   h2 {
-    font-size: 1.338em; } }
+    font-size: 1.338em;
+  }
+}
 @media (max-width: 368pt) {
   body {
-    padding: 0.39067in 0.39067in; }
+    padding: 0.3906666667in 0.3906666667in;
+  }
 
   #header {
-    font-size: 0.836em; }
+    font-size: 0.836em;
+  }
 
   #header .contact {
-    font-size: 1.10933em; }
+    font-size: 1.1093333333em;
+  }
 
   h2 {
-    font-size: 1.336em; } }
+    font-size: 1.336em;
+  }
+}
 @media (max-width: 367pt) {
   body {
-    padding: 0.38933in 0.38933in; }
+    padding: 0.3893333333in 0.3893333333in;
+  }
 
   #header {
-    font-size: 0.834em; }
+    font-size: 0.834em;
+  }
 
   #header .contact {
-    font-size: 1.11067em; }
+    font-size: 1.1106666667em;
+  }
 
   h2 {
-    font-size: 1.334em; } }
+    font-size: 1.334em;
+  }
+}
 @media (max-width: 366pt) {
   body {
-    padding: 0.388in 0.388in; }
+    padding: 0.388in 0.388in;
+  }
 
   #header {
-    font-size: 0.832em; }
+    font-size: 0.832em;
+  }
 
   #header .contact {
-    font-size: 1.112em; }
+    font-size: 1.112em;
+  }
 
   h2 {
-    font-size: 1.332em; } }
+    font-size: 1.332em;
+  }
+}
 @media (max-width: 365pt) {
   body {
-    padding: 0.38667in 0.38667in; }
+    padding: 0.3866666667in 0.3866666667in;
+  }
 
   #header {
-    font-size: 0.83em; }
+    font-size: 0.83em;
+  }
 
   #header .contact {
-    font-size: 1.11333em; }
+    font-size: 1.1133333333em;
+  }
 
   h2 {
-    font-size: 1.33em; } }
+    font-size: 1.33em;
+  }
+}
 @media (max-width: 364pt) {
   body {
-    padding: 0.38533in 0.38533in; }
+    padding: 0.3853333333in 0.3853333333in;
+  }
 
   #header {
-    font-size: 0.828em; }
+    font-size: 0.828em;
+  }
 
   #header .contact {
-    font-size: 1.11467em; }
+    font-size: 1.1146666667em;
+  }
 
   h2 {
-    font-size: 1.328em; } }
+    font-size: 1.328em;
+  }
+}
 @media (max-width: 363pt) {
   body {
-    padding: 0.384in 0.384in; }
+    padding: 0.384in 0.384in;
+  }
 
   #header {
-    font-size: 0.826em; }
+    font-size: 0.826em;
+  }
 
   #header .contact {
-    font-size: 1.116em; }
+    font-size: 1.116em;
+  }
 
   h2 {
-    font-size: 1.326em; } }
+    font-size: 1.326em;
+  }
+}
 @media (max-width: 362pt) {
   body {
-    padding: 0.38267in 0.38267in; }
+    padding: 0.3826666667in 0.3826666667in;
+  }
 
   #header {
-    font-size: 0.824em; }
+    font-size: 0.824em;
+  }
 
   #header .contact {
-    font-size: 1.11733em; }
+    font-size: 1.1173333333em;
+  }
 
   h2 {
-    font-size: 1.324em; } }
+    font-size: 1.324em;
+  }
+}
 @media (max-width: 361pt) {
   body {
-    padding: 0.38133in 0.38133in; }
+    padding: 0.3813333333in 0.3813333333in;
+  }
 
   #header {
-    font-size: 0.822em; }
+    font-size: 0.822em;
+  }
 
   #header .contact {
-    font-size: 1.11867em; }
+    font-size: 1.1186666667em;
+  }
 
   h2 {
-    font-size: 1.322em; } }
+    font-size: 1.322em;
+  }
+}
 @media (max-width: 360pt) {
   body {
-    padding: 0.38in 0.38in; }
+    padding: 0.38in 0.38in;
+  }
 
   #header {
-    font-size: 0.82em; }
+    font-size: 0.82em;
+  }
 
   #header .contact {
-    font-size: 1.12em; }
+    font-size: 1.12em;
+  }
 
   h2 {
-    font-size: 1.32em; } }
+    font-size: 1.32em;
+  }
+}
 @media (max-width: 359pt) {
   body {
-    padding: 0.37867in 0.37867in; }
+    padding: 0.3786666667in 0.3786666667in;
+  }
 
   #header {
-    font-size: 0.818em; }
+    font-size: 0.818em;
+  }
 
   #header .contact {
-    font-size: 1.12133em; }
+    font-size: 1.1213333333em;
+  }
 
   h2 {
-    font-size: 1.318em; } }
+    font-size: 1.318em;
+  }
+}
 @media (max-width: 358pt) {
   body {
-    padding: 0.37733in 0.37733in; }
+    padding: 0.3773333333in 0.3773333333in;
+  }
 
   #header {
-    font-size: 0.816em; }
+    font-size: 0.816em;
+  }
 
   #header .contact {
-    font-size: 1.12267em; }
+    font-size: 1.1226666667em;
+  }
 
   h2 {
-    font-size: 1.316em; } }
+    font-size: 1.316em;
+  }
+}
 @media (max-width: 357pt) {
   body {
-    padding: 0.376in 0.376in; }
+    padding: 0.376in 0.376in;
+  }
 
   #header {
-    font-size: 0.814em; }
+    font-size: 0.814em;
+  }
 
   #header .contact {
-    font-size: 1.124em; }
+    font-size: 1.124em;
+  }
 
   h2 {
-    font-size: 1.314em; } }
+    font-size: 1.314em;
+  }
+}
 @media (max-width: 356pt) {
   body {
-    padding: 0.37467in 0.37467in; }
+    padding: 0.3746666667in 0.3746666667in;
+  }
 
   #header {
-    font-size: 0.812em; }
+    font-size: 0.812em;
+  }
 
   #header .contact {
-    font-size: 1.12533em; }
+    font-size: 1.1253333333em;
+  }
 
   h2 {
-    font-size: 1.312em; } }
+    font-size: 1.312em;
+  }
+}
 @media (max-width: 355pt) {
   body {
-    padding: 0.37333in 0.37333in; }
+    padding: 0.3733333333in 0.3733333333in;
+  }
 
   #header {
-    font-size: 0.81em; }
+    font-size: 0.81em;
+  }
 
   #header .contact {
-    font-size: 1.12667em; }
+    font-size: 1.1266666667em;
+  }
 
   h2 {
-    font-size: 1.31em; } }
+    font-size: 1.31em;
+  }
+}
 @media (max-width: 354pt) {
   body {
-    padding: 0.372in 0.372in; }
+    padding: 0.372in 0.372in;
+  }
 
   #header {
-    font-size: 0.808em; }
+    font-size: 0.808em;
+  }
 
   #header .contact {
-    font-size: 1.128em; }
+    font-size: 1.128em;
+  }
 
   h2 {
-    font-size: 1.308em; } }
+    font-size: 1.308em;
+  }
+}
 @media (max-width: 353pt) {
   body {
-    padding: 0.37067in 0.37067in; }
+    padding: 0.3706666667in 0.3706666667in;
+  }
 
   #header {
-    font-size: 0.806em; }
+    font-size: 0.806em;
+  }
 
   #header .contact {
-    font-size: 1.12933em; }
+    font-size: 1.1293333333em;
+  }
 
   h2 {
-    font-size: 1.306em; } }
+    font-size: 1.306em;
+  }
+}
 @media (max-width: 352pt) {
   body {
-    padding: 0.36933in 0.36933in; }
+    padding: 0.3693333333in 0.3693333333in;
+  }
 
   #header {
-    font-size: 0.804em; }
+    font-size: 0.804em;
+  }
 
   #header .contact {
-    font-size: 1.13067em; }
+    font-size: 1.1306666667em;
+  }
 
   h2 {
-    font-size: 1.304em; } }
+    font-size: 1.304em;
+  }
+}
 @media (max-width: 351pt) {
   body {
-    padding: 0.368in 0.368in; }
+    padding: 0.368in 0.368in;
+  }
 
   #header {
-    font-size: 0.802em; }
+    font-size: 0.802em;
+  }
 
   #header .contact {
-    font-size: 1.132em; }
+    font-size: 1.132em;
+  }
 
   h2 {
-    font-size: 1.302em; } }
+    font-size: 1.302em;
+  }
+}
 @media (max-width: 350pt) {
   body {
-    padding: 0.36667in 0.36667in; }
+    padding: 0.3666666667in 0.3666666667in;
+  }
 
   #header {
-    font-size: 0.8em; }
+    font-size: 0.8em;
+  }
 
   #header .contact {
-    font-size: 1.13333em; }
+    font-size: 1.1333333333em;
+  }
 
   h2 {
-    font-size: 1.3em; } }
+    font-size: 1.3em;
+  }
+}
 @media (max-width: 349pt) {
   body {
-    padding: 0.36533in 0.36533in; }
+    padding: 0.3653333333in 0.3653333333in;
+  }
 
   #header {
-    font-size: 0.798em; }
+    font-size: 0.798em;
+  }
 
   #header .contact {
-    font-size: 1.13467em; }
+    font-size: 1.1346666667em;
+  }
 
   h2 {
-    font-size: 1.298em; } }
+    font-size: 1.298em;
+  }
+}
 @media (max-width: 348pt) {
   body {
-    padding: 0.364in 0.364in; }
+    padding: 0.364in 0.364in;
+  }
 
   #header {
-    font-size: 0.796em; }
+    font-size: 0.796em;
+  }
 
   #header .contact {
-    font-size: 1.136em; }
+    font-size: 1.136em;
+  }
 
   h2 {
-    font-size: 1.296em; } }
+    font-size: 1.296em;
+  }
+}
 @media (max-width: 347pt) {
   body {
-    padding: 0.36267in 0.36267in; }
+    padding: 0.3626666667in 0.3626666667in;
+  }
 
   #header {
-    font-size: 0.794em; }
+    font-size: 0.794em;
+  }
 
   #header .contact {
-    font-size: 1.13733em; }
+    font-size: 1.1373333333em;
+  }
 
   h2 {
-    font-size: 1.294em; } }
+    font-size: 1.294em;
+  }
+}
 @media (max-width: 346pt) {
   body {
-    padding: 0.36133in 0.36133in; }
+    padding: 0.3613333333in 0.3613333333in;
+  }
 
   #header {
-    font-size: 0.792em; }
+    font-size: 0.792em;
+  }
 
   #header .contact {
-    font-size: 1.13867em; }
+    font-size: 1.1386666667em;
+  }
 
   h2 {
-    font-size: 1.292em; } }
+    font-size: 1.292em;
+  }
+}
 @media (max-width: 345pt) {
   body {
-    padding: 0.36in 0.36in; }
+    padding: 0.36in 0.36in;
+  }
 
   #header {
-    font-size: 0.79em; }
+    font-size: 0.79em;
+  }
 
   #header .contact {
-    font-size: 1.14em; }
+    font-size: 1.14em;
+  }
 
   h2 {
-    font-size: 1.29em; } }
+    font-size: 1.29em;
+  }
+}
 @media (max-width: 344pt) {
   body {
-    padding: 0.35867in 0.35867in; }
+    padding: 0.3586666667in 0.3586666667in;
+  }
 
   #header {
-    font-size: 0.788em; }
+    font-size: 0.788em;
+  }
 
   #header .contact {
-    font-size: 1.14133em; }
+    font-size: 1.1413333333em;
+  }
 
   h2 {
-    font-size: 1.288em; } }
+    font-size: 1.288em;
+  }
+}
 @media (max-width: 343pt) {
   body {
-    padding: 0.35733in 0.35733in; }
+    padding: 0.3573333333in 0.3573333333in;
+  }
 
   #header {
-    font-size: 0.786em; }
+    font-size: 0.786em;
+  }
 
   #header .contact {
-    font-size: 1.14267em; }
+    font-size: 1.1426666667em;
+  }
 
   h2 {
-    font-size: 1.286em; } }
+    font-size: 1.286em;
+  }
+}
 @media (max-width: 342pt) {
   body {
-    padding: 0.356in 0.356in; }
+    padding: 0.356in 0.356in;
+  }
 
   #header {
-    font-size: 0.784em; }
+    font-size: 0.784em;
+  }
 
   #header .contact {
-    font-size: 1.144em; }
+    font-size: 1.144em;
+  }
 
   h2 {
-    font-size: 1.284em; } }
+    font-size: 1.284em;
+  }
+}
 @media (max-width: 341pt) {
   body {
-    padding: 0.35467in 0.35467in; }
+    padding: 0.3546666667in 0.3546666667in;
+  }
 
   #header {
-    font-size: 0.782em; }
+    font-size: 0.782em;
+  }
 
   #header .contact {
-    font-size: 1.14533em; }
+    font-size: 1.1453333333em;
+  }
 
   h2 {
-    font-size: 1.282em; } }
+    font-size: 1.282em;
+  }
+}
 @media (max-width: 340pt) {
   body {
-    padding: 0.35333in 0.35333in; }
+    padding: 0.3533333333in 0.3533333333in;
+  }
 
   #header {
-    font-size: 0.78em; }
+    font-size: 0.78em;
+  }
 
   #header .contact {
-    font-size: 1.14667em; }
+    font-size: 1.1466666667em;
+  }
 
   h2 {
-    font-size: 1.28em; } }
+    font-size: 1.28em;
+  }
+}
 @media (max-width: 339pt) {
   body {
-    padding: 0.352in 0.352in; }
+    padding: 0.352in 0.352in;
+  }
 
   #header {
-    font-size: 0.778em; }
+    font-size: 0.778em;
+  }
 
   #header .contact {
-    font-size: 1.148em; }
+    font-size: 1.148em;
+  }
 
   h2 {
-    font-size: 1.278em; } }
+    font-size: 1.278em;
+  }
+}
 @media (max-width: 338pt) {
   body {
-    padding: 0.35067in 0.35067in; }
+    padding: 0.3506666667in 0.3506666667in;
+  }
 
   #header {
-    font-size: 0.776em; }
+    font-size: 0.776em;
+  }
 
   #header .contact {
-    font-size: 1.14933em; }
+    font-size: 1.1493333333em;
+  }
 
   h2 {
-    font-size: 1.276em; } }
+    font-size: 1.276em;
+  }
+}
 @media (max-width: 337pt) {
   body {
-    padding: 0.34933in 0.34933in; }
+    padding: 0.3493333333in 0.3493333333in;
+  }
 
   #header {
-    font-size: 0.774em; }
+    font-size: 0.774em;
+  }
 
   #header .contact {
-    font-size: 1.15067em; }
+    font-size: 1.1506666667em;
+  }
 
   h2 {
-    font-size: 1.274em; } }
+    font-size: 1.274em;
+  }
+}
 @media (max-width: 336pt) {
   body {
-    padding: 0.348in 0.348in; }
+    padding: 0.348in 0.348in;
+  }
 
   #header {
-    font-size: 0.772em; }
+    font-size: 0.772em;
+  }
 
   #header .contact {
-    font-size: 1.152em; }
+    font-size: 1.152em;
+  }
 
   h2 {
-    font-size: 1.272em; } }
+    font-size: 1.272em;
+  }
+}
 @media (max-width: 335pt) {
   body {
-    padding: 0.34667in 0.34667in; }
+    padding: 0.3466666667in 0.3466666667in;
+  }
 
   #header {
-    font-size: 0.77em; }
+    font-size: 0.77em;
+  }
 
   #header .contact {
-    font-size: 1.15333em; }
+    font-size: 1.1533333333em;
+  }
 
   h2 {
-    font-size: 1.27em; } }
+    font-size: 1.27em;
+  }
+}
 @media (max-width: 334pt) {
   body {
-    padding: 0.34533in 0.34533in; }
+    padding: 0.3453333333in 0.3453333333in;
+  }
 
   #header {
-    font-size: 0.768em; }
+    font-size: 0.768em;
+  }
 
   #header .contact {
-    font-size: 1.15467em; }
+    font-size: 1.1546666667em;
+  }
 
   h2 {
-    font-size: 1.268em; } }
+    font-size: 1.268em;
+  }
+}
 @media (max-width: 333pt) {
   body {
-    padding: 0.344in 0.344in; }
+    padding: 0.344in 0.344in;
+  }
 
   #header {
-    font-size: 0.766em; }
+    font-size: 0.766em;
+  }
 
   #header .contact {
-    font-size: 1.156em; }
+    font-size: 1.156em;
+  }
 
   h2 {
-    font-size: 1.266em; } }
+    font-size: 1.266em;
+  }
+}
 @media (max-width: 332pt) {
   body {
-    padding: 0.34267in 0.34267in; }
+    padding: 0.3426666667in 0.3426666667in;
+  }
 
   #header {
-    font-size: 0.764em; }
+    font-size: 0.764em;
+  }
 
   #header .contact {
-    font-size: 1.15733em; }
+    font-size: 1.1573333333em;
+  }
 
   h2 {
-    font-size: 1.264em; } }
+    font-size: 1.264em;
+  }
+}
 @media (max-width: 331pt) {
   body {
-    padding: 0.34133in 0.34133in; }
+    padding: 0.3413333333in 0.3413333333in;
+  }
 
   #header {
-    font-size: 0.762em; }
+    font-size: 0.762em;
+  }
 
   #header .contact {
-    font-size: 1.15867em; }
+    font-size: 1.1586666667em;
+  }
 
   h2 {
-    font-size: 1.262em; } }
+    font-size: 1.262em;
+  }
+}
 @media (max-width: 330pt) {
   body {
-    padding: 0.34in 0.34in; }
+    padding: 0.34in 0.34in;
+  }
 
   #header {
-    font-size: 0.76em; }
+    font-size: 0.76em;
+  }
 
   #header .contact {
-    font-size: 1.16em; }
+    font-size: 1.16em;
+  }
 
   h2 {
-    font-size: 1.26em; } }
+    font-size: 1.26em;
+  }
+}
 @media (max-width: 329pt) {
   body {
-    padding: 0.33867in 0.33867in; }
+    padding: 0.3386666667in 0.3386666667in;
+  }
 
   #header {
-    font-size: 0.758em; }
+    font-size: 0.758em;
+  }
 
   #header .contact {
-    font-size: 1.16133em; }
+    font-size: 1.1613333333em;
+  }
 
   h2 {
-    font-size: 1.258em; } }
+    font-size: 1.258em;
+  }
+}
 @media (max-width: 328pt) {
   body {
-    padding: 0.33733in 0.33733in; }
+    padding: 0.3373333333in 0.3373333333in;
+  }
 
   #header {
-    font-size: 0.756em; }
+    font-size: 0.756em;
+  }
 
   #header .contact {
-    font-size: 1.16267em; }
+    font-size: 1.1626666667em;
+  }
 
   h2 {
-    font-size: 1.256em; } }
+    font-size: 1.256em;
+  }
+}
 @media (max-width: 327pt) {
   body {
-    padding: 0.336in 0.336in; }
+    padding: 0.336in 0.336in;
+  }
 
   #header {
-    font-size: 0.754em; }
+    font-size: 0.754em;
+  }
 
   #header .contact {
-    font-size: 1.164em; }
+    font-size: 1.164em;
+  }
 
   h2 {
-    font-size: 1.254em; } }
+    font-size: 1.254em;
+  }
+}
 @media (max-width: 326pt) {
   body {
-    padding: 0.33467in 0.33467in; }
+    padding: 0.3346666667in 0.3346666667in;
+  }
 
   #header {
-    font-size: 0.752em; }
+    font-size: 0.752em;
+  }
 
   #header .contact {
-    font-size: 1.16533em; }
+    font-size: 1.1653333333em;
+  }
 
   h2 {
-    font-size: 1.252em; } }
+    font-size: 1.252em;
+  }
+}
 @media (max-width: 325pt) {
   body {
-    padding: 0.33333in 0.33333in; }
+    padding: 0.3333333333in 0.3333333333in;
+  }
 
   #header {
-    font-size: 0.75em; }
+    font-size: 0.75em;
+  }
 
   #header .contact {
-    font-size: 1.16667em; }
+    font-size: 1.1666666667em;
+  }
 
   h2 {
-    font-size: 1.25em; } }
+    font-size: 1.25em;
+  }
+}
 @media (max-width: 324pt) {
   body {
-    padding: 0.332in 0.332in; }
+    padding: 0.332in 0.332in;
+  }
 
   #header {
-    font-size: 0.748em; }
+    font-size: 0.748em;
+  }
 
   #header .contact {
-    font-size: 1.168em; }
+    font-size: 1.168em;
+  }
 
   h2 {
-    font-size: 1.248em; } }
+    font-size: 1.248em;
+  }
+}
 @media (max-width: 323pt) {
   body {
-    padding: 0.33067in 0.33067in; }
+    padding: 0.3306666667in 0.3306666667in;
+  }
 
   #header {
-    font-size: 0.746em; }
+    font-size: 0.746em;
+  }
 
   #header .contact {
-    font-size: 1.16933em; }
+    font-size: 1.1693333333em;
+  }
 
   h2 {
-    font-size: 1.246em; } }
+    font-size: 1.246em;
+  }
+}
 @media (max-width: 322pt) {
   body {
-    padding: 0.32933in 0.32933in; }
+    padding: 0.3293333333in 0.3293333333in;
+  }
 
   #header {
-    font-size: 0.744em; }
+    font-size: 0.744em;
+  }
 
   #header .contact {
-    font-size: 1.17067em; }
+    font-size: 1.1706666667em;
+  }
 
   h2 {
-    font-size: 1.244em; } }
+    font-size: 1.244em;
+  }
+}
 @media (max-width: 321pt) {
   body {
-    padding: 0.328in 0.328in; }
+    padding: 0.328in 0.328in;
+  }
 
   #header {
-    font-size: 0.742em; }
+    font-size: 0.742em;
+  }
 
   #header .contact {
-    font-size: 1.172em; }
+    font-size: 1.172em;
+  }
 
   h2 {
-    font-size: 1.242em; } }
+    font-size: 1.242em;
+  }
+}
 @media (max-width: 320pt) {
   body {
-    padding: 0.32667in 0.32667in; }
+    padding: 0.3266666667in 0.3266666667in;
+  }
 
   #header {
-    font-size: 0.74em; }
+    font-size: 0.74em;
+  }
 
   #header .contact {
-    font-size: 1.17333em; }
+    font-size: 1.1733333333em;
+  }
 
   h2 {
-    font-size: 1.24em; } }
+    font-size: 1.24em;
+  }
+}
 @media (max-width: 319pt) {
   body {
-    padding: 0.32533in 0.32533in; }
+    padding: 0.3253333333in 0.3253333333in;
+  }
 
   #header {
-    font-size: 0.738em; }
+    font-size: 0.738em;
+  }
 
   #header .contact {
-    font-size: 1.17467em; }
+    font-size: 1.1746666667em;
+  }
 
   h2 {
-    font-size: 1.238em; } }
+    font-size: 1.238em;
+  }
+}
 @media (max-width: 318pt) {
   body {
-    padding: 0.324in 0.324in; }
+    padding: 0.324in 0.324in;
+  }
 
   #header {
-    font-size: 0.736em; }
+    font-size: 0.736em;
+  }
 
   #header .contact {
-    font-size: 1.176em; }
+    font-size: 1.176em;
+  }
 
   h2 {
-    font-size: 1.236em; } }
+    font-size: 1.236em;
+  }
+}
 @media (max-width: 317pt) {
   body {
-    padding: 0.32267in 0.32267in; }
+    padding: 0.3226666667in 0.3226666667in;
+  }
 
   #header {
-    font-size: 0.734em; }
+    font-size: 0.734em;
+  }
 
   #header .contact {
-    font-size: 1.17733em; }
+    font-size: 1.1773333333em;
+  }
 
   h2 {
-    font-size: 1.234em; } }
+    font-size: 1.234em;
+  }
+}
 @media (max-width: 316pt) {
   body {
-    padding: 0.32133in 0.32133in; }
+    padding: 0.3213333333in 0.3213333333in;
+  }
 
   #header {
-    font-size: 0.732em; }
+    font-size: 0.732em;
+  }
 
   #header .contact {
-    font-size: 1.17867em; }
+    font-size: 1.1786666667em;
+  }
 
   h2 {
-    font-size: 1.232em; } }
+    font-size: 1.232em;
+  }
+}
 @media (max-width: 315pt) {
   body {
-    padding: 0.32in 0.32in; }
+    padding: 0.32in 0.32in;
+  }
 
   #header {
-    font-size: 0.73em; }
+    font-size: 0.73em;
+  }
 
   #header .contact {
-    font-size: 1.18em; }
+    font-size: 1.18em;
+  }
 
   h2 {
-    font-size: 1.23em; } }
+    font-size: 1.23em;
+  }
+}
 @media (max-width: 314pt) {
   body {
-    padding: 0.31867in 0.31867in; }
+    padding: 0.3186666667in 0.3186666667in;
+  }
 
   #header {
-    font-size: 0.728em; }
+    font-size: 0.728em;
+  }
 
   #header .contact {
-    font-size: 1.18133em; }
+    font-size: 1.1813333333em;
+  }
 
   h2 {
-    font-size: 1.228em; } }
+    font-size: 1.228em;
+  }
+}
 @media (max-width: 313pt) {
   body {
-    padding: 0.31733in 0.31733in; }
+    padding: 0.3173333333in 0.3173333333in;
+  }
 
   #header {
-    font-size: 0.726em; }
+    font-size: 0.726em;
+  }
 
   #header .contact {
-    font-size: 1.18267em; }
+    font-size: 1.1826666667em;
+  }
 
   h2 {
-    font-size: 1.226em; } }
+    font-size: 1.226em;
+  }
+}
 @media (max-width: 312pt) {
   body {
-    padding: 0.316in 0.316in; }
+    padding: 0.316in 0.316in;
+  }
 
   #header {
-    font-size: 0.724em; }
+    font-size: 0.724em;
+  }
 
   #header .contact {
-    font-size: 1.184em; }
+    font-size: 1.184em;
+  }
 
   h2 {
-    font-size: 1.224em; } }
+    font-size: 1.224em;
+  }
+}
 @media (max-width: 311pt) {
   body {
-    padding: 0.31467in 0.31467in; }
+    padding: 0.3146666667in 0.3146666667in;
+  }
 
   #header {
-    font-size: 0.722em; }
+    font-size: 0.722em;
+  }
 
   #header .contact {
-    font-size: 1.18533em; }
+    font-size: 1.1853333333em;
+  }
 
   h2 {
-    font-size: 1.222em; } }
+    font-size: 1.222em;
+  }
+}
 @media (max-width: 310pt) {
   body {
-    padding: 0.31333in 0.31333in; }
+    padding: 0.3133333333in 0.3133333333in;
+  }
 
   #header {
-    font-size: 0.72em; }
+    font-size: 0.72em;
+  }
 
   #header .contact {
-    font-size: 1.18667em; }
+    font-size: 1.1866666667em;
+  }
 
   h2 {
-    font-size: 1.22em; } }
+    font-size: 1.22em;
+  }
+}
 @media (max-width: 309pt) {
   body {
-    padding: 0.312in 0.312in; }
+    padding: 0.312in 0.312in;
+  }
 
   #header {
-    font-size: 0.718em; }
+    font-size: 0.718em;
+  }
 
   #header .contact {
-    font-size: 1.188em; }
+    font-size: 1.188em;
+  }
 
   h2 {
-    font-size: 1.218em; } }
+    font-size: 1.218em;
+  }
+}
 @media (max-width: 308pt) {
   body {
-    padding: 0.31067in 0.31067in; }
+    padding: 0.3106666667in 0.3106666667in;
+  }
 
   #header {
-    font-size: 0.716em; }
+    font-size: 0.716em;
+  }
 
   #header .contact {
-    font-size: 1.18933em; }
+    font-size: 1.1893333333em;
+  }
 
   h2 {
-    font-size: 1.216em; } }
+    font-size: 1.216em;
+  }
+}
 @media (max-width: 307pt) {
   body {
-    padding: 0.30933in 0.30933in; }
+    padding: 0.3093333333in 0.3093333333in;
+  }
 
   #header {
-    font-size: 0.714em; }
+    font-size: 0.714em;
+  }
 
   #header .contact {
-    font-size: 1.19067em; }
+    font-size: 1.1906666667em;
+  }
 
   h2 {
-    font-size: 1.214em; } }
+    font-size: 1.214em;
+  }
+}
 @media (max-width: 306pt) {
   body {
-    padding: 0.308in 0.308in; }
+    padding: 0.308in 0.308in;
+  }
 
   #header {
-    font-size: 0.712em; }
+    font-size: 0.712em;
+  }
 
   #header .contact {
-    font-size: 1.192em; }
+    font-size: 1.192em;
+  }
 
   h2 {
-    font-size: 1.212em; } }
+    font-size: 1.212em;
+  }
+}
 @media (max-width: 305pt) {
   body {
-    padding: 0.30667in 0.30667in; }
+    padding: 0.3066666667in 0.3066666667in;
+  }
 
   #header {
-    font-size: 0.71em; }
+    font-size: 0.71em;
+  }
 
   #header .contact {
-    font-size: 1.19333em; }
+    font-size: 1.1933333333em;
+  }
 
   h2 {
-    font-size: 1.21em; } }
+    font-size: 1.21em;
+  }
+}
 @media (max-width: 304pt) {
   body {
-    padding: 0.30533in 0.30533in; }
+    padding: 0.3053333333in 0.3053333333in;
+  }
 
   #header {
-    font-size: 0.708em; }
+    font-size: 0.708em;
+  }
 
   #header .contact {
-    font-size: 1.19467em; }
+    font-size: 1.1946666667em;
+  }
 
   h2 {
-    font-size: 1.208em; } }
+    font-size: 1.208em;
+  }
+}
 @media (max-width: 303pt) {
   body {
-    padding: 0.304in 0.304in; }
+    padding: 0.304in 0.304in;
+  }
 
   #header {
-    font-size: 0.706em; }
+    font-size: 0.706em;
+  }
 
   #header .contact {
-    font-size: 1.196em; }
+    font-size: 1.196em;
+  }
 
   h2 {
-    font-size: 1.206em; } }
+    font-size: 1.206em;
+  }
+}
 @media (max-width: 302pt) {
   body {
-    padding: 0.30267in 0.30267in; }
+    padding: 0.3026666667in 0.3026666667in;
+  }
 
   #header {
-    font-size: 0.704em; }
+    font-size: 0.704em;
+  }
 
   #header .contact {
-    font-size: 1.19733em; }
+    font-size: 1.1973333333em;
+  }
 
   h2 {
-    font-size: 1.204em; } }
+    font-size: 1.204em;
+  }
+}
 @media (max-width: 301pt) {
   body {
-    padding: 0.30133in 0.30133in; }
+    padding: 0.3013333333in 0.3013333333in;
+  }
 
   #header {
-    font-size: 0.702em; }
+    font-size: 0.702em;
+  }
 
   #header .contact {
-    font-size: 1.19867em; }
+    font-size: 1.1986666667em;
+  }
 
   h2 {
-    font-size: 1.202em; } }
+    font-size: 1.202em;
+  }
+}
 @media (max-width: 300pt) {
   body {
-    padding: 0.3in 0.3in; }
+    padding: 0.3in 0.3in;
+  }
 
   #header {
-    font-size: 0.7em; }
+    font-size: 0.7em;
+  }
 
   #header .contact {
-    font-size: 1.2em; }
+    font-size: 1.2em;
+  }
 
   h2 {
-    font-size: 1.2em; } }
+    font-size: 1.2em;
+  }
+}
 @media (max-width: 299pt) {
   body {
-    padding: 0.29867in 0.29867in; }
+    padding: 0.2986666667in 0.2986666667in;
+  }
 
   #header {
-    font-size: 0.698em; }
+    font-size: 0.698em;
+  }
 
   #header .contact {
-    font-size: 1.20133em; }
+    font-size: 1.2013333333em;
+  }
 
   h2 {
-    font-size: 1.198em; } }
+    font-size: 1.198em;
+  }
+}
 @media (max-width: 298pt) {
   body {
-    padding: 0.29733in 0.29733in; }
+    padding: 0.2973333333in 0.2973333333in;
+  }
 
   #header {
-    font-size: 0.696em; }
+    font-size: 0.696em;
+  }
 
   #header .contact {
-    font-size: 1.20267em; }
+    font-size: 1.2026666667em;
+  }
 
   h2 {
-    font-size: 1.196em; } }
+    font-size: 1.196em;
+  }
+}
 @media (max-width: 297pt) {
   body {
-    padding: 0.296in 0.296in; }
+    padding: 0.296in 0.296in;
+  }
 
   #header {
-    font-size: 0.694em; }
+    font-size: 0.694em;
+  }
 
   #header .contact {
-    font-size: 1.204em; }
+    font-size: 1.204em;
+  }
 
   h2 {
-    font-size: 1.194em; } }
+    font-size: 1.194em;
+  }
+}
 @media (max-width: 296pt) {
   body {
-    padding: 0.29467in 0.29467in; }
+    padding: 0.2946666667in 0.2946666667in;
+  }
 
   #header {
-    font-size: 0.692em; }
+    font-size: 0.692em;
+  }
 
   #header .contact {
-    font-size: 1.20533em; }
+    font-size: 1.2053333333em;
+  }
 
   h2 {
-    font-size: 1.192em; } }
+    font-size: 1.192em;
+  }
+}
 @media (max-width: 295pt) {
   body {
-    padding: 0.29333in 0.29333in; }
+    padding: 0.2933333333in 0.2933333333in;
+  }
 
   #header {
-    font-size: 0.69em; }
+    font-size: 0.69em;
+  }
 
   #header .contact {
-    font-size: 1.20667em; }
+    font-size: 1.2066666667em;
+  }
 
   h2 {
-    font-size: 1.19em; } }
+    font-size: 1.19em;
+  }
+}
 @media (max-width: 294pt) {
   body {
-    padding: 0.292in 0.292in; }
+    padding: 0.292in 0.292in;
+  }
 
   #header {
-    font-size: 0.688em; }
+    font-size: 0.688em;
+  }
 
   #header .contact {
-    font-size: 1.208em; }
+    font-size: 1.208em;
+  }
 
   h2 {
-    font-size: 1.188em; } }
+    font-size: 1.188em;
+  }
+}
 @media (max-width: 293pt) {
   body {
-    padding: 0.29067in 0.29067in; }
+    padding: 0.2906666667in 0.2906666667in;
+  }
 
   #header {
-    font-size: 0.686em; }
+    font-size: 0.686em;
+  }
 
   #header .contact {
-    font-size: 1.20933em; }
+    font-size: 1.2093333333em;
+  }
 
   h2 {
-    font-size: 1.186em; } }
+    font-size: 1.186em;
+  }
+}
 @media (max-width: 292pt) {
   body {
-    padding: 0.28933in 0.28933in; }
+    padding: 0.2893333333in 0.2893333333in;
+  }
 
   #header {
-    font-size: 0.684em; }
+    font-size: 0.684em;
+  }
 
   #header .contact {
-    font-size: 1.21067em; }
+    font-size: 1.2106666667em;
+  }
 
   h2 {
-    font-size: 1.184em; } }
+    font-size: 1.184em;
+  }
+}
 @media (max-width: 291pt) {
   body {
-    padding: 0.288in 0.288in; }
+    padding: 0.288in 0.288in;
+  }
 
   #header {
-    font-size: 0.682em; }
+    font-size: 0.682em;
+  }
 
   #header .contact {
-    font-size: 1.212em; }
+    font-size: 1.212em;
+  }
 
   h2 {
-    font-size: 1.182em; } }
+    font-size: 1.182em;
+  }
+}
 @media (max-width: 290pt) {
   body {
-    padding: 0.28667in 0.28667in; }
+    padding: 0.2866666667in 0.2866666667in;
+  }
 
   #header {
-    font-size: 0.68em; }
+    font-size: 0.68em;
+  }
 
   #header .contact {
-    font-size: 1.21333em; }
+    font-size: 1.2133333333em;
+  }
 
   h2 {
-    font-size: 1.18em; } }
+    font-size: 1.18em;
+  }
+}
 @media (max-width: 289pt) {
   body {
-    padding: 0.28533in 0.28533in; }
+    padding: 0.2853333333in 0.2853333333in;
+  }
 
   #header {
-    font-size: 0.678em; }
+    font-size: 0.678em;
+  }
 
   #header .contact {
-    font-size: 1.21467em; }
+    font-size: 1.2146666667em;
+  }
 
   h2 {
-    font-size: 1.178em; } }
+    font-size: 1.178em;
+  }
+}
 @media (max-width: 288pt) {
   body {
-    padding: 0.284in 0.284in; }
+    padding: 0.284in 0.284in;
+  }
 
   #header {
-    font-size: 0.676em; }
+    font-size: 0.676em;
+  }
 
   #header .contact {
-    font-size: 1.216em; }
+    font-size: 1.216em;
+  }
 
   h2 {
-    font-size: 1.176em; } }
+    font-size: 1.176em;
+  }
+}
 @media (max-width: 287pt) {
   body {
-    padding: 0.28267in 0.28267in; }
+    padding: 0.2826666667in 0.2826666667in;
+  }
 
   #header {
-    font-size: 0.674em; }
+    font-size: 0.674em;
+  }
 
   #header .contact {
-    font-size: 1.21733em; }
+    font-size: 1.2173333333em;
+  }
 
   h2 {
-    font-size: 1.174em; } }
+    font-size: 1.174em;
+  }
+}
 @media (max-width: 286pt) {
   body {
-    padding: 0.28133in 0.28133in; }
+    padding: 0.2813333333in 0.2813333333in;
+  }
 
   #header {
-    font-size: 0.672em; }
+    font-size: 0.672em;
+  }
 
   #header .contact {
-    font-size: 1.21867em; }
+    font-size: 1.2186666667em;
+  }
 
   h2 {
-    font-size: 1.172em; } }
+    font-size: 1.172em;
+  }
+}
 @media (max-width: 285pt) {
   body {
-    padding: 0.28in 0.28in; }
+    padding: 0.28in 0.28in;
+  }
 
   #header {
-    font-size: 0.67em; }
+    font-size: 0.67em;
+  }
 
   #header .contact {
-    font-size: 1.22em; }
+    font-size: 1.22em;
+  }
 
   h2 {
-    font-size: 1.17em; } }
+    font-size: 1.17em;
+  }
+}
 @media (max-width: 284pt) {
   body {
-    padding: 0.27867in 0.27867in; }
+    padding: 0.2786666667in 0.2786666667in;
+  }
 
   #header {
-    font-size: 0.668em; }
+    font-size: 0.668em;
+  }
 
   #header .contact {
-    font-size: 1.22133em; }
+    font-size: 1.2213333333em;
+  }
 
   h2 {
-    font-size: 1.168em; } }
+    font-size: 1.168em;
+  }
+}
 @media (max-width: 283pt) {
   body {
-    padding: 0.27733in 0.27733in; }
+    padding: 0.2773333333in 0.2773333333in;
+  }
 
   #header {
-    font-size: 0.666em; }
+    font-size: 0.666em;
+  }
 
   #header .contact {
-    font-size: 1.22267em; }
+    font-size: 1.2226666667em;
+  }
 
   h2 {
-    font-size: 1.166em; } }
+    font-size: 1.166em;
+  }
+}
 @media (max-width: 282pt) {
   body {
-    padding: 0.276in 0.276in; }
+    padding: 0.276in 0.276in;
+  }
 
   #header {
-    font-size: 0.664em; }
+    font-size: 0.664em;
+  }
 
   #header .contact {
-    font-size: 1.224em; }
+    font-size: 1.224em;
+  }
 
   h2 {
-    font-size: 1.164em; } }
+    font-size: 1.164em;
+  }
+}
 @media (max-width: 281pt) {
   body {
-    padding: 0.27467in 0.27467in; }
+    padding: 0.2746666667in 0.2746666667in;
+  }
 
   #header {
-    font-size: 0.662em; }
+    font-size: 0.662em;
+  }
 
   #header .contact {
-    font-size: 1.22533em; }
+    font-size: 1.2253333333em;
+  }
 
   h2 {
-    font-size: 1.162em; } }
+    font-size: 1.162em;
+  }
+}
 @media (max-width: 280pt) {
   body {
-    padding: 0.27333in 0.27333in; }
+    padding: 0.2733333333in 0.2733333333in;
+  }
 
   #header {
-    font-size: 0.66em; }
+    font-size: 0.66em;
+  }
 
   #header .contact {
-    font-size: 1.22667em; }
+    font-size: 1.2266666667em;
+  }
 
   h2 {
-    font-size: 1.16em; } }
+    font-size: 1.16em;
+  }
+}
 @media (max-width: 279pt) {
   body {
-    padding: 0.272in 0.272in; }
+    padding: 0.272in 0.272in;
+  }
 
   #header {
-    font-size: 0.658em; }
+    font-size: 0.658em;
+  }
 
   #header .contact {
-    font-size: 1.228em; }
+    font-size: 1.228em;
+  }
 
   h2 {
-    font-size: 1.158em; } }
+    font-size: 1.158em;
+  }
+}
 @media (max-width: 278pt) {
   body {
-    padding: 0.27067in 0.27067in; }
+    padding: 0.2706666667in 0.2706666667in;
+  }
 
   #header {
-    font-size: 0.656em; }
+    font-size: 0.656em;
+  }
 
   #header .contact {
-    font-size: 1.22933em; }
+    font-size: 1.2293333333em;
+  }
 
   h2 {
-    font-size: 1.156em; } }
+    font-size: 1.156em;
+  }
+}
 @media (max-width: 277pt) {
   body {
-    padding: 0.26933in 0.26933in; }
+    padding: 0.2693333333in 0.2693333333in;
+  }
 
   #header {
-    font-size: 0.654em; }
+    font-size: 0.654em;
+  }
 
   #header .contact {
-    font-size: 1.23067em; }
+    font-size: 1.2306666667em;
+  }
 
   h2 {
-    font-size: 1.154em; } }
+    font-size: 1.154em;
+  }
+}
 @media (max-width: 276pt) {
   body {
-    padding: 0.268in 0.268in; }
+    padding: 0.268in 0.268in;
+  }
 
   #header {
-    font-size: 0.652em; }
+    font-size: 0.652em;
+  }
 
   #header .contact {
-    font-size: 1.232em; }
+    font-size: 1.232em;
+  }
 
   h2 {
-    font-size: 1.152em; } }
+    font-size: 1.152em;
+  }
+}
 @media (max-width: 275pt) {
   body {
-    padding: 0.26667in 0.26667in; }
+    padding: 0.2666666667in 0.2666666667in;
+  }
 
   #header {
-    font-size: 0.65em; }
+    font-size: 0.65em;
+  }
 
   #header .contact {
-    font-size: 1.23333em; }
+    font-size: 1.2333333333em;
+  }
 
   h2 {
-    font-size: 1.15em; } }
+    font-size: 1.15em;
+  }
+}
 @media (max-width: 274pt) {
   body {
-    padding: 0.26533in 0.26533in; }
+    padding: 0.2653333333in 0.2653333333in;
+  }
 
   #header {
-    font-size: 0.648em; }
+    font-size: 0.648em;
+  }
 
   #header .contact {
-    font-size: 1.23467em; }
+    font-size: 1.2346666667em;
+  }
 
   h2 {
-    font-size: 1.148em; } }
+    font-size: 1.148em;
+  }
+}
 @media (max-width: 273pt) {
   body {
-    padding: 0.264in 0.264in; }
+    padding: 0.264in 0.264in;
+  }
 
   #header {
-    font-size: 0.646em; }
+    font-size: 0.646em;
+  }
 
   #header .contact {
-    font-size: 1.236em; }
+    font-size: 1.236em;
+  }
 
   h2 {
-    font-size: 1.146em; } }
+    font-size: 1.146em;
+  }
+}
 @media (max-width: 272pt) {
   body {
-    padding: 0.26267in 0.26267in; }
+    padding: 0.2626666667in 0.2626666667in;
+  }
 
   #header {
-    font-size: 0.644em; }
+    font-size: 0.644em;
+  }
 
   #header .contact {
-    font-size: 1.23733em; }
+    font-size: 1.2373333333em;
+  }
 
   h2 {
-    font-size: 1.144em; } }
+    font-size: 1.144em;
+  }
+}
 @media (max-width: 271pt) {
   body {
-    padding: 0.26133in 0.26133in; }
+    padding: 0.2613333333in 0.2613333333in;
+  }
 
   #header {
-    font-size: 0.642em; }
+    font-size: 0.642em;
+  }
 
   #header .contact {
-    font-size: 1.23867em; }
+    font-size: 1.2386666667em;
+  }
 
   h2 {
-    font-size: 1.142em; } }
+    font-size: 1.142em;
+  }
+}
 @media (max-width: 270pt) {
   body {
-    padding: 0.26in 0.26in; }
+    padding: 0.26in 0.26in;
+  }
 
   #header {
-    font-size: 0.64em; }
+    font-size: 0.64em;
+  }
 
   #header .contact {
-    font-size: 1.24em; }
+    font-size: 1.24em;
+  }
 
   h2 {
-    font-size: 1.14em; } }
+    font-size: 1.14em;
+  }
+}
 @media (max-width: 269pt) {
   body {
-    padding: 0.25867in 0.25867in; }
+    padding: 0.2586666667in 0.2586666667in;
+  }
 
   #header {
-    font-size: 0.638em; }
+    font-size: 0.638em;
+  }
 
   #header .contact {
-    font-size: 1.24133em; }
+    font-size: 1.2413333333em;
+  }
 
   h2 {
-    font-size: 1.138em; } }
+    font-size: 1.138em;
+  }
+}
 @media (max-width: 268pt) {
   body {
-    padding: 0.25733in 0.25733in; }
+    padding: 0.2573333333in 0.2573333333in;
+  }
 
   #header {
-    font-size: 0.636em; }
+    font-size: 0.636em;
+  }
 
   #header .contact {
-    font-size: 1.24267em; }
+    font-size: 1.2426666667em;
+  }
 
   h2 {
-    font-size: 1.136em; } }
+    font-size: 1.136em;
+  }
+}
 @media (max-width: 267pt) {
   body {
-    padding: 0.256in 0.256in; }
+    padding: 0.256in 0.256in;
+  }
 
   #header {
-    font-size: 0.634em; }
+    font-size: 0.634em;
+  }
 
   #header .contact {
-    font-size: 1.244em; }
+    font-size: 1.244em;
+  }
 
   h2 {
-    font-size: 1.134em; } }
+    font-size: 1.134em;
+  }
+}
 @media (max-width: 266pt) {
   body {
-    padding: 0.25467in 0.25467in; }
+    padding: 0.2546666667in 0.2546666667in;
+  }
 
   #header {
-    font-size: 0.632em; }
+    font-size: 0.632em;
+  }
 
   #header .contact {
-    font-size: 1.24533em; }
+    font-size: 1.2453333333em;
+  }
 
   h2 {
-    font-size: 1.132em; } }
+    font-size: 1.132em;
+  }
+}
 @media (max-width: 265pt) {
   body {
-    padding: 0.25333in 0.25333in; }
+    padding: 0.2533333333in 0.2533333333in;
+  }
 
   #header {
-    font-size: 0.63em; }
+    font-size: 0.63em;
+  }
 
   #header .contact {
-    font-size: 1.24667em; }
+    font-size: 1.2466666667em;
+  }
 
   h2 {
-    font-size: 1.13em; } }
+    font-size: 1.13em;
+  }
+}
 @media (max-width: 264pt) {
   body {
-    padding: 0.252in 0.252in; }
+    padding: 0.252in 0.252in;
+  }
 
   #header {
-    font-size: 0.628em; }
+    font-size: 0.628em;
+  }
 
   #header .contact {
-    font-size: 1.248em; }
+    font-size: 1.248em;
+  }
 
   h2 {
-    font-size: 1.128em; } }
+    font-size: 1.128em;
+  }
+}
 @media (max-width: 263pt) {
   body {
-    padding: 0.25067in 0.25067in; }
+    padding: 0.2506666667in 0.2506666667in;
+  }
 
   #header {
-    font-size: 0.626em; }
+    font-size: 0.626em;
+  }
 
   #header .contact {
-    font-size: 1.24933em; }
+    font-size: 1.2493333333em;
+  }
 
   h2 {
-    font-size: 1.126em; } }
+    font-size: 1.126em;
+  }
+}
 @media (max-width: 262pt) {
   body {
-    padding: 0.24933in 0.24933in; }
+    padding: 0.2493333333in 0.2493333333in;
+  }
 
   #header {
-    font-size: 0.624em; }
+    font-size: 0.624em;
+  }
 
   #header .contact {
-    font-size: 1.25067em; }
+    font-size: 1.2506666667em;
+  }
 
   h2 {
-    font-size: 1.124em; } }
+    font-size: 1.124em;
+  }
+}
 @media (max-width: 261pt) {
   body {
-    padding: 0.248in 0.248in; }
+    padding: 0.248in 0.248in;
+  }
 
   #header {
-    font-size: 0.622em; }
+    font-size: 0.622em;
+  }
 
   #header .contact {
-    font-size: 1.252em; }
+    font-size: 1.252em;
+  }
 
   h2 {
-    font-size: 1.122em; } }
+    font-size: 1.122em;
+  }
+}
 @media (max-width: 260pt) {
   body {
-    padding: 0.24667in 0.24667in; }
+    padding: 0.2466666667in 0.2466666667in;
+  }
 
   #header {
-    font-size: 0.62em; }
+    font-size: 0.62em;
+  }
 
   #header .contact {
-    font-size: 1.25333em; }
+    font-size: 1.2533333333em;
+  }
 
   h2 {
-    font-size: 1.12em; } }
+    font-size: 1.12em;
+  }
+}
 @media (max-width: 259pt) {
   body {
-    padding: 0.24533in 0.24533in; }
+    padding: 0.2453333333in 0.2453333333in;
+  }
 
   #header {
-    font-size: 0.618em; }
+    font-size: 0.618em;
+  }
 
   #header .contact {
-    font-size: 1.25467em; }
+    font-size: 1.2546666667em;
+  }
 
   h2 {
-    font-size: 1.118em; } }
+    font-size: 1.118em;
+  }
+}
 @media (max-width: 258pt) {
   body {
-    padding: 0.244in 0.244in; }
+    padding: 0.244in 0.244in;
+  }
 
   #header {
-    font-size: 0.616em; }
+    font-size: 0.616em;
+  }
 
   #header .contact {
-    font-size: 1.256em; }
+    font-size: 1.256em;
+  }
 
   h2 {
-    font-size: 1.116em; } }
+    font-size: 1.116em;
+  }
+}
 @media (max-width: 257pt) {
   body {
-    padding: 0.24267in 0.24267in; }
+    padding: 0.2426666667in 0.2426666667in;
+  }
 
   #header {
-    font-size: 0.614em; }
+    font-size: 0.614em;
+  }
 
   #header .contact {
-    font-size: 1.25733em; }
+    font-size: 1.2573333333em;
+  }
 
   h2 {
-    font-size: 1.114em; } }
+    font-size: 1.114em;
+  }
+}
 @media (max-width: 256pt) {
   body {
-    padding: 0.24133in 0.24133in; }
+    padding: 0.2413333333in 0.2413333333in;
+  }
 
   #header {
-    font-size: 0.612em; }
+    font-size: 0.612em;
+  }
 
   #header .contact {
-    font-size: 1.25867em; }
+    font-size: 1.2586666667em;
+  }
 
   h2 {
-    font-size: 1.112em; } }
+    font-size: 1.112em;
+  }
+}
 @media (max-width: 255pt) {
   body {
-    padding: 0.24in 0.24in; }
+    padding: 0.24in 0.24in;
+  }
 
   #header {
-    font-size: 0.61em; }
+    font-size: 0.61em;
+  }
 
   #header .contact {
-    font-size: 1.26em; }
+    font-size: 1.26em;
+  }
 
   h2 {
-    font-size: 1.11em; } }
+    font-size: 1.11em;
+  }
+}
 @media (max-width: 254pt) {
   body {
-    padding: 0.23867in 0.23867in; }
+    padding: 0.2386666667in 0.2386666667in;
+  }
 
   #header {
-    font-size: 0.608em; }
+    font-size: 0.608em;
+  }
 
   #header .contact {
-    font-size: 1.26133em; }
+    font-size: 1.2613333333em;
+  }
 
   h2 {
-    font-size: 1.108em; } }
+    font-size: 1.108em;
+  }
+}
 @media (max-width: 253pt) {
   body {
-    padding: 0.23733in 0.23733in; }
+    padding: 0.2373333333in 0.2373333333in;
+  }
 
   #header {
-    font-size: 0.606em; }
+    font-size: 0.606em;
+  }
 
   #header .contact {
-    font-size: 1.26267em; }
+    font-size: 1.2626666667em;
+  }
 
   h2 {
-    font-size: 1.106em; } }
+    font-size: 1.106em;
+  }
+}
 @media (max-width: 252pt) {
   body {
-    padding: 0.236in 0.236in; }
+    padding: 0.236in 0.236in;
+  }
 
   #header {
-    font-size: 0.604em; }
+    font-size: 0.604em;
+  }
 
   #header .contact {
-    font-size: 1.264em; }
+    font-size: 1.264em;
+  }
 
   h2 {
-    font-size: 1.104em; } }
+    font-size: 1.104em;
+  }
+}
 @media (max-width: 251pt) {
   body {
-    padding: 0.23467in 0.23467in; }
+    padding: 0.2346666667in 0.2346666667in;
+  }
 
   #header {
-    font-size: 0.602em; }
+    font-size: 0.602em;
+  }
 
   #header .contact {
-    font-size: 1.26533em; }
+    font-size: 1.2653333333em;
+  }
 
   h2 {
-    font-size: 1.102em; } }
+    font-size: 1.102em;
+  }
+}
 @media (max-width: 250pt) {
   body {
-    padding: 0.23333in 0.23333in; }
+    padding: 0.2333333333in 0.2333333333in;
+  }
 
   #header {
-    font-size: 0.6em; }
+    font-size: 0.6em;
+  }
 
   #header .contact {
-    font-size: 1.26667em; }
+    font-size: 1.2666666667em;
+  }
 
   h2 {
-    font-size: 1.1em; } }
+    font-size: 1.1em;
+  }
+}
 @media (max-width: 249pt) {
   body {
-    padding: 0.232in 0.232in; }
+    padding: 0.232in 0.232in;
+  }
 
   #header {
-    font-size: 0.598em; }
+    font-size: 0.598em;
+  }
 
   #header .contact {
-    font-size: 1.268em; }
+    font-size: 1.268em;
+  }
 
   h2 {
-    font-size: 1.098em; } }
+    font-size: 1.098em;
+  }
+}
 @media (max-width: 248pt) {
   body {
-    padding: 0.23067in 0.23067in; }
+    padding: 0.2306666667in 0.2306666667in;
+  }
 
   #header {
-    font-size: 0.596em; }
+    font-size: 0.596em;
+  }
 
   #header .contact {
-    font-size: 1.26933em; }
+    font-size: 1.2693333333em;
+  }
 
   h2 {
-    font-size: 1.096em; } }
+    font-size: 1.096em;
+  }
+}
 @media (max-width: 247pt) {
   body {
-    padding: 0.22933in 0.22933in; }
+    padding: 0.2293333333in 0.2293333333in;
+  }
 
   #header {
-    font-size: 0.594em; }
+    font-size: 0.594em;
+  }
 
   #header .contact {
-    font-size: 1.27067em; }
+    font-size: 1.2706666667em;
+  }
 
   h2 {
-    font-size: 1.094em; } }
+    font-size: 1.094em;
+  }
+}
 @media (max-width: 246pt) {
   body {
-    padding: 0.228in 0.228in; }
+    padding: 0.228in 0.228in;
+  }
 
   #header {
-    font-size: 0.592em; }
+    font-size: 0.592em;
+  }
 
   #header .contact {
-    font-size: 1.272em; }
+    font-size: 1.272em;
+  }
 
   h2 {
-    font-size: 1.092em; } }
+    font-size: 1.092em;
+  }
+}
 @media (max-width: 245pt) {
   body {
-    padding: 0.22667in 0.22667in; }
+    padding: 0.2266666667in 0.2266666667in;
+  }
 
   #header {
-    font-size: 0.59em; }
+    font-size: 0.59em;
+  }
 
   #header .contact {
-    font-size: 1.27333em; }
+    font-size: 1.2733333333em;
+  }
 
   h2 {
-    font-size: 1.09em; } }
+    font-size: 1.09em;
+  }
+}
 @media (max-width: 244pt) {
   body {
-    padding: 0.22533in 0.22533in; }
+    padding: 0.2253333333in 0.2253333333in;
+  }
 
   #header {
-    font-size: 0.588em; }
+    font-size: 0.588em;
+  }
 
   #header .contact {
-    font-size: 1.27467em; }
+    font-size: 1.2746666667em;
+  }
 
   h2 {
-    font-size: 1.088em; } }
+    font-size: 1.088em;
+  }
+}
 @media (max-width: 243pt) {
   body {
-    padding: 0.224in 0.224in; }
+    padding: 0.224in 0.224in;
+  }
 
   #header {
-    font-size: 0.586em; }
+    font-size: 0.586em;
+  }
 
   #header .contact {
-    font-size: 1.276em; }
+    font-size: 1.276em;
+  }
 
   h2 {
-    font-size: 1.086em; } }
+    font-size: 1.086em;
+  }
+}
 @media (max-width: 242pt) {
   body {
-    padding: 0.22267in 0.22267in; }
+    padding: 0.2226666667in 0.2226666667in;
+  }
 
   #header {
-    font-size: 0.584em; }
+    font-size: 0.584em;
+  }
 
   #header .contact {
-    font-size: 1.27733em; }
+    font-size: 1.2773333333em;
+  }
 
   h2 {
-    font-size: 1.084em; } }
+    font-size: 1.084em;
+  }
+}
 @media (max-width: 241pt) {
   body {
-    padding: 0.22133in 0.22133in; }
+    padding: 0.2213333333in 0.2213333333in;
+  }
 
   #header {
-    font-size: 0.582em; }
+    font-size: 0.582em;
+  }
 
   #header .contact {
-    font-size: 1.27867em; }
+    font-size: 1.2786666667em;
+  }
 
   h2 {
-    font-size: 1.082em; } }
+    font-size: 1.082em;
+  }
+}
 @media (max-width: 240pt) {
   body {
-    padding: 0.22in 0.22in; }
+    padding: 0.22in 0.22in;
+  }
 
   #header {
-    font-size: 0.58em; }
+    font-size: 0.58em;
+  }
 
   #header .contact {
-    font-size: 1.28em; }
+    font-size: 1.28em;
+  }
 
   h2 {
-    font-size: 1.08em; } }
+    font-size: 1.08em;
+  }
+}
 @media (max-width: 239pt) {
   body {
-    padding: 0.21867in 0.21867in; }
+    padding: 0.2186666667in 0.2186666667in;
+  }
 
   #header {
-    font-size: 0.578em; }
+    font-size: 0.578em;
+  }
 
   #header .contact {
-    font-size: 1.28133em; }
+    font-size: 1.2813333333em;
+  }
 
   h2 {
-    font-size: 1.078em; } }
+    font-size: 1.078em;
+  }
+}
 @media (max-width: 238pt) {
   body {
-    padding: 0.21733in 0.21733in; }
+    padding: 0.2173333333in 0.2173333333in;
+  }
 
   #header {
-    font-size: 0.576em; }
+    font-size: 0.576em;
+  }
 
   #header .contact {
-    font-size: 1.28267em; }
+    font-size: 1.2826666667em;
+  }
 
   h2 {
-    font-size: 1.076em; } }
+    font-size: 1.076em;
+  }
+}
 @media (max-width: 237pt) {
   body {
-    padding: 0.216in 0.216in; }
+    padding: 0.216in 0.216in;
+  }
 
   #header {
-    font-size: 0.574em; }
+    font-size: 0.574em;
+  }
 
   #header .contact {
-    font-size: 1.284em; }
+    font-size: 1.284em;
+  }
 
   h2 {
-    font-size: 1.074em; } }
+    font-size: 1.074em;
+  }
+}
 @media (max-width: 236pt) {
   body {
-    padding: 0.21467in 0.21467in; }
+    padding: 0.2146666667in 0.2146666667in;
+  }
 
   #header {
-    font-size: 0.572em; }
+    font-size: 0.572em;
+  }
 
   #header .contact {
-    font-size: 1.28533em; }
+    font-size: 1.2853333333em;
+  }
 
   h2 {
-    font-size: 1.072em; } }
+    font-size: 1.072em;
+  }
+}
 @media (max-width: 235pt) {
   body {
-    padding: 0.21333in 0.21333in; }
+    padding: 0.2133333333in 0.2133333333in;
+  }
 
   #header {
-    font-size: 0.57em; }
+    font-size: 0.57em;
+  }
 
   #header .contact {
-    font-size: 1.28667em; }
+    font-size: 1.2866666667em;
+  }
 
   h2 {
-    font-size: 1.07em; } }
+    font-size: 1.07em;
+  }
+}
 @media (max-width: 234pt) {
   body {
-    padding: 0.212in 0.212in; }
+    padding: 0.212in 0.212in;
+  }
 
   #header {
-    font-size: 0.568em; }
+    font-size: 0.568em;
+  }
 
   #header .contact {
-    font-size: 1.288em; }
+    font-size: 1.288em;
+  }
 
   h2 {
-    font-size: 1.068em; } }
+    font-size: 1.068em;
+  }
+}
 @media (max-width: 233pt) {
   body {
-    padding: 0.21067in 0.21067in; }
+    padding: 0.2106666667in 0.2106666667in;
+  }
 
   #header {
-    font-size: 0.566em; }
+    font-size: 0.566em;
+  }
 
   #header .contact {
-    font-size: 1.28933em; }
+    font-size: 1.2893333333em;
+  }
 
   h2 {
-    font-size: 1.066em; } }
+    font-size: 1.066em;
+  }
+}
 @media (max-width: 232pt) {
   body {
-    padding: 0.20933in 0.20933in; }
+    padding: 0.2093333333in 0.2093333333in;
+  }
 
   #header {
-    font-size: 0.564em; }
+    font-size: 0.564em;
+  }
 
   #header .contact {
-    font-size: 1.29067em; }
+    font-size: 1.2906666667em;
+  }
 
   h2 {
-    font-size: 1.064em; } }
+    font-size: 1.064em;
+  }
+}
 @media (max-width: 231pt) {
   body {
-    padding: 0.208in 0.208in; }
+    padding: 0.208in 0.208in;
+  }
 
   #header {
-    font-size: 0.562em; }
+    font-size: 0.562em;
+  }
 
   #header .contact {
-    font-size: 1.292em; }
+    font-size: 1.292em;
+  }
 
   h2 {
-    font-size: 1.062em; } }
+    font-size: 1.062em;
+  }
+}
 @media (max-width: 230pt) {
   body {
-    padding: 0.20667in 0.20667in; }
+    padding: 0.2066666667in 0.2066666667in;
+  }
 
   #header {
-    font-size: 0.56em; }
+    font-size: 0.56em;
+  }
 
   #header .contact {
-    font-size: 1.29333em; }
+    font-size: 1.2933333333em;
+  }
 
   h2 {
-    font-size: 1.06em; } }
+    font-size: 1.06em;
+  }
+}
 @media (max-width: 229pt) {
   body {
-    padding: 0.20533in 0.20533in; }
+    padding: 0.2053333333in 0.2053333333in;
+  }
 
   #header {
-    font-size: 0.558em; }
+    font-size: 0.558em;
+  }
 
   #header .contact {
-    font-size: 1.29467em; }
+    font-size: 1.2946666667em;
+  }
 
   h2 {
-    font-size: 1.058em; } }
+    font-size: 1.058em;
+  }
+}
 @media (max-width: 228pt) {
   body {
-    padding: 0.204in 0.204in; }
+    padding: 0.204in 0.204in;
+  }
 
   #header {
-    font-size: 0.556em; }
+    font-size: 0.556em;
+  }
 
   #header .contact {
-    font-size: 1.296em; }
+    font-size: 1.296em;
+  }
 
   h2 {
-    font-size: 1.056em; } }
+    font-size: 1.056em;
+  }
+}
 @media (max-width: 227pt) {
   body {
-    padding: 0.20267in 0.20267in; }
+    padding: 0.2026666667in 0.2026666667in;
+  }
 
   #header {
-    font-size: 0.554em; }
+    font-size: 0.554em;
+  }
 
   #header .contact {
-    font-size: 1.29733em; }
+    font-size: 1.2973333333em;
+  }
 
   h2 {
-    font-size: 1.054em; } }
+    font-size: 1.054em;
+  }
+}
 @media (max-width: 226pt) {
   body {
-    padding: 0.20133in 0.20133in; }
+    padding: 0.2013333333in 0.2013333333in;
+  }
 
   #header {
-    font-size: 0.552em; }
+    font-size: 0.552em;
+  }
 
   #header .contact {
-    font-size: 1.29867em; }
+    font-size: 1.2986666667em;
+  }
 
   h2 {
-    font-size: 1.052em; } }
+    font-size: 1.052em;
+  }
+}
 @media (max-width: 225pt) {
   body {
-    padding: 0.2in 0.2in; }
+    padding: 0.2in 0.2in;
+  }
 
   #header {
-    font-size: 0.55em; }
+    font-size: 0.55em;
+  }
 
   #header .contact {
-    font-size: 1.3em; }
+    font-size: 1.3em;
+  }
 
   h2 {
-    font-size: 1.05em; } }
+    font-size: 1.05em;
+  }
+}
 @media (max-width: 224pt) {
   body {
-    padding: 0.19867in 0.19867in; }
+    padding: 0.1986666667in 0.1986666667in;
+  }
 
   #header {
-    font-size: 0.548em; }
+    font-size: 0.548em;
+  }
 
   #header .contact {
-    font-size: 1.30133em; }
+    font-size: 1.3013333333em;
+  }
 
   h2 {
-    font-size: 1.048em; } }
+    font-size: 1.048em;
+  }
+}
 @media (max-width: 223pt) {
   body {
-    padding: 0.19733in 0.19733in; }
+    padding: 0.1973333333in 0.1973333333in;
+  }
 
   #header {
-    font-size: 0.546em; }
+    font-size: 0.546em;
+  }
 
   #header .contact {
-    font-size: 1.30267em; }
+    font-size: 1.3026666667em;
+  }
 
   h2 {
-    font-size: 1.046em; } }
+    font-size: 1.046em;
+  }
+}
 @media (max-width: 222pt) {
   body {
-    padding: 0.196in 0.196in; }
+    padding: 0.196in 0.196in;
+  }
 
   #header {
-    font-size: 0.544em; }
+    font-size: 0.544em;
+  }
 
   #header .contact {
-    font-size: 1.304em; }
+    font-size: 1.304em;
+  }
 
   h2 {
-    font-size: 1.044em; } }
+    font-size: 1.044em;
+  }
+}
 @media (max-width: 221pt) {
   body {
-    padding: 0.19467in 0.19467in; }
+    padding: 0.1946666667in 0.1946666667in;
+  }
 
   #header {
-    font-size: 0.542em; }
+    font-size: 0.542em;
+  }
 
   #header .contact {
-    font-size: 1.30533em; }
+    font-size: 1.3053333333em;
+  }
 
   h2 {
-    font-size: 1.042em; } }
+    font-size: 1.042em;
+  }
+}
 @media (max-width: 220pt) {
   body {
-    padding: 0.19333in 0.19333in; }
+    padding: 0.1933333333in 0.1933333333in;
+  }
 
   #header {
-    font-size: 0.54em; }
+    font-size: 0.54em;
+  }
 
   #header .contact {
-    font-size: 1.30667em; }
+    font-size: 1.3066666667em;
+  }
 
   h2 {
-    font-size: 1.04em; } }
+    font-size: 1.04em;
+  }
+}
 @media (max-width: 219pt) {
   body {
-    padding: 0.192in 0.192in; }
+    padding: 0.192in 0.192in;
+  }
 
   #header {
-    font-size: 0.538em; }
+    font-size: 0.538em;
+  }
 
   #header .contact {
-    font-size: 1.308em; }
+    font-size: 1.308em;
+  }
 
   h2 {
-    font-size: 1.038em; } }
+    font-size: 1.038em;
+  }
+}
 @media (max-width: 218pt) {
   body {
-    padding: 0.19067in 0.19067in; }
+    padding: 0.1906666667in 0.1906666667in;
+  }
 
   #header {
-    font-size: 0.536em; }
+    font-size: 0.536em;
+  }
 
   #header .contact {
-    font-size: 1.30933em; }
+    font-size: 1.3093333333em;
+  }
 
   h2 {
-    font-size: 1.036em; } }
+    font-size: 1.036em;
+  }
+}
 @media (max-width: 217pt) {
   body {
-    padding: 0.18933in 0.18933in; }
+    padding: 0.1893333333in 0.1893333333in;
+  }
 
   #header {
-    font-size: 0.534em; }
+    font-size: 0.534em;
+  }
 
   #header .contact {
-    font-size: 1.31067em; }
+    font-size: 1.3106666667em;
+  }
 
   h2 {
-    font-size: 1.034em; } }
+    font-size: 1.034em;
+  }
+}
 @media (max-width: 216pt) {
   body {
-    padding: 0.188in 0.188in; }
+    padding: 0.188in 0.188in;
+  }
 
   #header {
-    font-size: 0.532em; }
+    font-size: 0.532em;
+  }
 
   #header .contact {
-    font-size: 1.312em; }
+    font-size: 1.312em;
+  }
 
   h2 {
-    font-size: 1.032em; } }
+    font-size: 1.032em;
+  }
+}
 @media (max-width: 215pt) {
   body {
-    padding: 0.18667in 0.18667in; }
+    padding: 0.1866666667in 0.1866666667in;
+  }
 
   #header {
-    font-size: 0.53em; }
+    font-size: 0.53em;
+  }
 
   #header .contact {
-    font-size: 1.31333em; }
+    font-size: 1.3133333333em;
+  }
 
   h2 {
-    font-size: 1.03em; } }
+    font-size: 1.03em;
+  }
+}
 @media (max-width: 214pt) {
   body {
-    padding: 0.18533in 0.18533in; }
+    padding: 0.1853333333in 0.1853333333in;
+  }
 
   #header {
-    font-size: 0.528em; }
+    font-size: 0.528em;
+  }
 
   #header .contact {
-    font-size: 1.31467em; }
+    font-size: 1.3146666667em;
+  }
 
   h2 {
-    font-size: 1.028em; } }
+    font-size: 1.028em;
+  }
+}
 @media (max-width: 213pt) {
   body {
-    padding: 0.184in 0.184in; }
+    padding: 0.184in 0.184in;
+  }
 
   #header {
-    font-size: 0.526em; }
+    font-size: 0.526em;
+  }
 
   #header .contact {
-    font-size: 1.316em; }
+    font-size: 1.316em;
+  }
 
   h2 {
-    font-size: 1.026em; } }
+    font-size: 1.026em;
+  }
+}
 @media (max-width: 212pt) {
   body {
-    padding: 0.18267in 0.18267in; }
+    padding: 0.1826666667in 0.1826666667in;
+  }
 
   #header {
-    font-size: 0.524em; }
+    font-size: 0.524em;
+  }
 
   #header .contact {
-    font-size: 1.31733em; }
+    font-size: 1.3173333333em;
+  }
 
   h2 {
-    font-size: 1.024em; } }
+    font-size: 1.024em;
+  }
+}
 @media (max-width: 211pt) {
   body {
-    padding: 0.18133in 0.18133in; }
+    padding: 0.1813333333in 0.1813333333in;
+  }
 
   #header {
-    font-size: 0.522em; }
+    font-size: 0.522em;
+  }
 
   #header .contact {
-    font-size: 1.31867em; }
+    font-size: 1.3186666667em;
+  }
 
   h2 {
-    font-size: 1.022em; } }
+    font-size: 1.022em;
+  }
+}
 @media (max-width: 210pt) {
   body {
-    padding: 0.18in 0.18in; }
+    padding: 0.18in 0.18in;
+  }
 
   #header {
-    font-size: 0.52em; }
+    font-size: 0.52em;
+  }
 
   #header .contact {
-    font-size: 1.32em; }
+    font-size: 1.32em;
+  }
 
   h2 {
-    font-size: 1.02em; } }
+    font-size: 1.02em;
+  }
+}
 @media (max-width: 209pt) {
   body {
-    padding: 0.17867in 0.17867in; }
+    padding: 0.1786666667in 0.1786666667in;
+  }
 
   #header {
-    font-size: 0.518em; }
+    font-size: 0.518em;
+  }
 
   #header .contact {
-    font-size: 1.32133em; }
+    font-size: 1.3213333333em;
+  }
 
   h2 {
-    font-size: 1.018em; } }
+    font-size: 1.018em;
+  }
+}
 @media (max-width: 208pt) {
   body {
-    padding: 0.17733in 0.17733in; }
+    padding: 0.1773333333in 0.1773333333in;
+  }
 
   #header {
-    font-size: 0.516em; }
+    font-size: 0.516em;
+  }
 
   #header .contact {
-    font-size: 1.32267em; }
+    font-size: 1.3226666667em;
+  }
 
   h2 {
-    font-size: 1.016em; } }
+    font-size: 1.016em;
+  }
+}
 @media (max-width: 207pt) {
   body {
-    padding: 0.176in 0.176in; }
+    padding: 0.176in 0.176in;
+  }
 
   #header {
-    font-size: 0.514em; }
+    font-size: 0.514em;
+  }
 
   #header .contact {
-    font-size: 1.324em; }
+    font-size: 1.324em;
+  }
 
   h2 {
-    font-size: 1.014em; } }
+    font-size: 1.014em;
+  }
+}
 @media (max-width: 206pt) {
   body {
-    padding: 0.17467in 0.17467in; }
+    padding: 0.1746666667in 0.1746666667in;
+  }
 
   #header {
-    font-size: 0.512em; }
+    font-size: 0.512em;
+  }
 
   #header .contact {
-    font-size: 1.32533em; }
+    font-size: 1.3253333333em;
+  }
 
   h2 {
-    font-size: 1.012em; } }
+    font-size: 1.012em;
+  }
+}
 @media (max-width: 205pt) {
   body {
-    padding: 0.17333in 0.17333in; }
+    padding: 0.1733333333in 0.1733333333in;
+  }
 
   #header {
-    font-size: 0.51em; }
+    font-size: 0.51em;
+  }
 
   #header .contact {
-    font-size: 1.32667em; }
+    font-size: 1.3266666667em;
+  }
 
   h2 {
-    font-size: 1.01em; } }
+    font-size: 1.01em;
+  }
+}
 @media (max-width: 204pt) {
   body {
-    padding: 0.172in 0.172in; }
+    padding: 0.172in 0.172in;
+  }
 
   #header {
-    font-size: 0.508em; }
+    font-size: 0.508em;
+  }
 
   #header .contact {
-    font-size: 1.328em; }
+    font-size: 1.328em;
+  }
 
   h2 {
-    font-size: 1.008em; } }
+    font-size: 1.008em;
+  }
+}
 @media (max-width: 203pt) {
   body {
-    padding: 0.17067in 0.17067in; }
+    padding: 0.1706666667in 0.1706666667in;
+  }
 
   #header {
-    font-size: 0.506em; }
+    font-size: 0.506em;
+  }
 
   #header .contact {
-    font-size: 1.32933em; }
+    font-size: 1.3293333333em;
+  }
 
   h2 {
-    font-size: 1.006em; } }
+    font-size: 1.006em;
+  }
+}
 @media (max-width: 202pt) {
   body {
-    padding: 0.16933in 0.16933in; }
+    padding: 0.1693333333in 0.1693333333in;
+  }
 
   #header {
-    font-size: 0.504em; }
+    font-size: 0.504em;
+  }
 
   #header .contact {
-    font-size: 1.33067em; }
+    font-size: 1.3306666667em;
+  }
 
   h2 {
-    font-size: 1.004em; } }
+    font-size: 1.004em;
+  }
+}
 @media (max-width: 201pt) {
   body {
-    padding: 0.168in 0.168in; }
+    padding: 0.168in 0.168in;
+  }
 
   #header {
-    font-size: 0.502em; }
+    font-size: 0.502em;
+  }
 
   #header .contact {
-    font-size: 1.332em; }
+    font-size: 1.332em;
+  }
 
   h2 {
-    font-size: 1.002em; } }
+    font-size: 1.002em;
+  }
+}
 @media (max-width: 200pt) {
   body {
-    padding: 0.16667in 0.16667in; }
+    padding: 0.1666666667in 0.1666666667in;
+  }
 
   #header {
-    font-size: 0.5em; }
+    font-size: 0.5em;
+  }
 
   #header .contact {
-    font-size: 1.33333em; }
+    font-size: 1.3333333333em;
+  }
 
   h2 {
-    font-size: 1em; } }
+    font-size: 1em;
+  }
+}
 @media (max-width: 199pt) {
   body {
-    padding: 0.16533in 0.16533in; }
+    padding: 0.1653333333in 0.1653333333in;
+  }
 
   #header {
-    font-size: 0.498em; }
+    font-size: 0.498em;
+  }
 
   #header .contact {
-    font-size: 1.33467em; }
+    font-size: 1.3346666667em;
+  }
 
   h2 {
-    font-size: 0.998em; } }
+    font-size: 0.998em;
+  }
+}
 @media (max-width: 198pt) {
   body {
-    padding: 0.164in 0.164in; }
+    padding: 0.164in 0.164in;
+  }
 
   #header {
-    font-size: 0.496em; }
+    font-size: 0.496em;
+  }
 
   #header .contact {
-    font-size: 1.336em; }
+    font-size: 1.336em;
+  }
 
   h2 {
-    font-size: 0.996em; } }
+    font-size: 0.996em;
+  }
+}
 @media (max-width: 197pt) {
   body {
-    padding: 0.16267in 0.16267in; }
+    padding: 0.1626666667in 0.1626666667in;
+  }
 
   #header {
-    font-size: 0.494em; }
+    font-size: 0.494em;
+  }
 
   #header .contact {
-    font-size: 1.33733em; }
+    font-size: 1.3373333333em;
+  }
 
   h2 {
-    font-size: 0.994em; } }
+    font-size: 0.994em;
+  }
+}
 @media (max-width: 196pt) {
   body {
-    padding: 0.16133in 0.16133in; }
+    padding: 0.1613333333in 0.1613333333in;
+  }
 
   #header {
-    font-size: 0.492em; }
+    font-size: 0.492em;
+  }
 
   #header .contact {
-    font-size: 1.33867em; }
+    font-size: 1.3386666667em;
+  }
 
   h2 {
-    font-size: 0.992em; } }
+    font-size: 0.992em;
+  }
+}
 @media (max-width: 195pt) {
   body {
-    padding: 0.16in 0.16in; }
+    padding: 0.16in 0.16in;
+  }
 
   #header {
-    font-size: 0.49em; }
+    font-size: 0.49em;
+  }
 
   #header .contact {
-    font-size: 1.34em; }
+    font-size: 1.34em;
+  }
 
   h2 {
-    font-size: 0.99em; } }
+    font-size: 0.99em;
+  }
+}
 @media (max-width: 194pt) {
   body {
-    padding: 0.15867in 0.15867in; }
+    padding: 0.1586666667in 0.1586666667in;
+  }
 
   #header {
-    font-size: 0.488em; }
+    font-size: 0.488em;
+  }
 
   #header .contact {
-    font-size: 1.34133em; }
+    font-size: 1.3413333333em;
+  }
 
   h2 {
-    font-size: 0.988em; } }
+    font-size: 0.988em;
+  }
+}
 @media (max-width: 193pt) {
   body {
-    padding: 0.15733in 0.15733in; }
+    padding: 0.1573333333in 0.1573333333in;
+  }
 
   #header {
-    font-size: 0.486em; }
+    font-size: 0.486em;
+  }
 
   #header .contact {
-    font-size: 1.34267em; }
+    font-size: 1.3426666667em;
+  }
 
   h2 {
-    font-size: 0.986em; } }
+    font-size: 0.986em;
+  }
+}
 @media (max-width: 192pt) {
   body {
-    padding: 0.156in 0.156in; }
+    padding: 0.156in 0.156in;
+  }
 
   #header {
-    font-size: 0.484em; }
+    font-size: 0.484em;
+  }
 
   #header .contact {
-    font-size: 1.344em; }
+    font-size: 1.344em;
+  }
 
   h2 {
-    font-size: 0.984em; } }
+    font-size: 0.984em;
+  }
+}
 @media (max-width: 191pt) {
   body {
-    padding: 0.15467in 0.15467in; }
+    padding: 0.1546666667in 0.1546666667in;
+  }
 
   #header {
-    font-size: 0.482em; }
+    font-size: 0.482em;
+  }
 
   #header .contact {
-    font-size: 1.34533em; }
+    font-size: 1.3453333333em;
+  }
 
   h2 {
-    font-size: 0.982em; } }
+    font-size: 0.982em;
+  }
+}
 @media (max-width: 190pt) {
   body {
-    padding: 0.15333in 0.15333in; }
+    padding: 0.1533333333in 0.1533333333in;
+  }
 
   #header {
-    font-size: 0.48em; }
+    font-size: 0.48em;
+  }
 
   #header .contact {
-    font-size: 1.34667em; }
+    font-size: 1.3466666667em;
+  }
 
   h2 {
-    font-size: 0.98em; } }
+    font-size: 0.98em;
+  }
+}
 @media (max-width: 189pt) {
   body {
-    padding: 0.152in 0.152in; }
+    padding: 0.152in 0.152in;
+  }
 
   #header {
-    font-size: 0.478em; }
+    font-size: 0.478em;
+  }
 
   #header .contact {
-    font-size: 1.348em; }
+    font-size: 1.348em;
+  }
 
   h2 {
-    font-size: 0.978em; } }
+    font-size: 0.978em;
+  }
+}
 @media (max-width: 188pt) {
   body {
-    padding: 0.15067in 0.15067in; }
+    padding: 0.1506666667in 0.1506666667in;
+  }
 
   #header {
-    font-size: 0.476em; }
+    font-size: 0.476em;
+  }
 
   #header .contact {
-    font-size: 1.34933em; }
+    font-size: 1.3493333333em;
+  }
 
   h2 {
-    font-size: 0.976em; } }
+    font-size: 0.976em;
+  }
+}
 @media (max-width: 187pt) {
   body {
-    padding: 0.14933in 0.14933in; }
+    padding: 0.1493333333in 0.1493333333in;
+  }
 
   #header {
-    font-size: 0.474em; }
+    font-size: 0.474em;
+  }
 
   #header .contact {
-    font-size: 1.35067em; }
+    font-size: 1.3506666667em;
+  }
 
   h2 {
-    font-size: 0.974em; } }
+    font-size: 0.974em;
+  }
+}
 @media (max-width: 186pt) {
   body {
-    padding: 0.148in 0.148in; }
+    padding: 0.148in 0.148in;
+  }
 
   #header {
-    font-size: 0.472em; }
+    font-size: 0.472em;
+  }
 
   #header .contact {
-    font-size: 1.352em; }
+    font-size: 1.352em;
+  }
 
   h2 {
-    font-size: 0.972em; } }
+    font-size: 0.972em;
+  }
+}
 @media (max-width: 185pt) {
   body {
-    padding: 0.14667in 0.14667in; }
+    padding: 0.1466666667in 0.1466666667in;
+  }
 
   #header {
-    font-size: 0.47em; }
+    font-size: 0.47em;
+  }
 
   #header .contact {
-    font-size: 1.35333em; }
+    font-size: 1.3533333333em;
+  }
 
   h2 {
-    font-size: 0.97em; } }
+    font-size: 0.97em;
+  }
+}
 @media (max-width: 184pt) {
   body {
-    padding: 0.14533in 0.14533in; }
+    padding: 0.1453333333in 0.1453333333in;
+  }
 
   #header {
-    font-size: 0.468em; }
+    font-size: 0.468em;
+  }
 
   #header .contact {
-    font-size: 1.35467em; }
+    font-size: 1.3546666667em;
+  }
 
   h2 {
-    font-size: 0.968em; } }
+    font-size: 0.968em;
+  }
+}
 @media (max-width: 183pt) {
   body {
-    padding: 0.144in 0.144in; }
+    padding: 0.144in 0.144in;
+  }
 
   #header {
-    font-size: 0.466em; }
+    font-size: 0.466em;
+  }
 
   #header .contact {
-    font-size: 1.356em; }
+    font-size: 1.356em;
+  }
 
   h2 {
-    font-size: 0.966em; } }
+    font-size: 0.966em;
+  }
+}
 @media (max-width: 182pt) {
   body {
-    padding: 0.14267in 0.14267in; }
+    padding: 0.1426666667in 0.1426666667in;
+  }
 
   #header {
-    font-size: 0.464em; }
+    font-size: 0.464em;
+  }
 
   #header .contact {
-    font-size: 1.35733em; }
+    font-size: 1.3573333333em;
+  }
 
   h2 {
-    font-size: 0.964em; } }
+    font-size: 0.964em;
+  }
+}
 @media (max-width: 181pt) {
   body {
-    padding: 0.14133in 0.14133in; }
+    padding: 0.1413333333in 0.1413333333in;
+  }
 
   #header {
-    font-size: 0.462em; }
+    font-size: 0.462em;
+  }
 
   #header .contact {
-    font-size: 1.35867em; }
+    font-size: 1.3586666667em;
+  }
 
   h2 {
-    font-size: 0.962em; } }
+    font-size: 0.962em;
+  }
+}
 @page {
-  size: 9.08in 11.93in;
+  size: 9.08in 12.05in;
   margin: 0em;
-  padding: 0em; }
+  padding: 0em;
+}

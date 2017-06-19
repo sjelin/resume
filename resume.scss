@@ -2,7 +2,7 @@ $pw: 8.5in;
 $ph: 11in;
 $pvm: 0.5in;
 $phm: $pvm;
-$about-w: (($pw - 3*$phm)/3);
+$about-w: (($pw - 3*$phm)/4);
 $expr-w: $pw - 3*$phm - $about-w;
 $font-size: 0.9em;
 $text-color: #444444;
@@ -135,8 +135,8 @@ h2 {
 		margin-top: 1.5em;
 	}
 }
-#about > *:first-child h2 { margin-top: 0em; }
 #experience {
+	& > *:first-child h2 { margin-top: 0em; }
 	a {
 		text-decoration: underline;
 		color: darken(saturate($highlight-color, 100%), 15%);
@@ -146,6 +146,7 @@ h2 {
 #about {
 	h2 {
 		margin-bottom: 0.5em;
+		margin-top: 1em;
 	}
 }
 
@@ -265,16 +266,15 @@ h2 {
 		}
 	}
 	#about {
-		left: $phm;
+		right: $phm;
 		width: $about-w;
-		h2 { margin-top: 2em; }
+		float: right;
+		& > *:first-child h2 { margin-top: 0em; }
 	}
 	#experience {
-		right: $phm;
+		left: $phm;
 		width: $expr-w;
-		float: right;
 		h2 { margin-top: 1em; }
-		& > *:first-child h2 { margin-top: 0em; }
 	}
 }
 
@@ -289,7 +289,7 @@ h2 {
 }
 
 @page {
-	size: 9.08in 11.93in; // Yeah, I have no idea why these are the correct numbers either
+	size: 9.08in 12.05in; // Yeah, I have no idea why these are the correct numbers either
 	margin: 0em;
 	padding: 0em;
 }
