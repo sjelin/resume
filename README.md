@@ -4,13 +4,11 @@ because GitHub is great.  You can find the resume in the following places:
 * [Web Version](http://sjelin.github.io/resume)
 * [PDF Version](http://sjelin.github.io/resume/Martin%20Samuel%20Jelin%27s%20Resume.pdf) (use this version for printing)
 
-Please note that the web version was built for modern browsers and is best
-viewed in either Chrome, Safari, iOS, or Android (though it has been tested
-in Firefox and works alright there too).
+I have only tested this resume in Chrome, so it may look a bit off in other
+browsers.
 
 Do not try to print the web version, it probably will not work.  It has been
-configured to print properly on my computer in Chrome.  Getting printing to
-work exactly how I want it to in multiple browsers is nearly impossible.
+configured to print properly on my computer in Chrome. 
 
 #### License
 
